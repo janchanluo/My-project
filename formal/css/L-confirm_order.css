@@ -1,0 +1,184 @@
+html {
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header,
+footer,
+nav,
+section,
+article {
+  display: block;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  outline: none;
+}
+.cur {
+  cursor: pointer;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.auto {
+  margin: 0 auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.txtcenteralign {
+  text-align: center;
+}
+.content {
+  width: 1200px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+.content .title ul li {
+  float: left;
+}
+.content .title ul li a {
+  color: #2c2c2c;
+}
+.content .title ul li:last-child {
+  color: #ff0000;
+}
+.content .address h2 {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 30px 0 35px 0;
+}
+.content .address .hoversquer {
+  background: url(../images/hoversquer.png) no-repeat;
+  width: 412px;
+  height: 257px;
+}
+.content .address ul {
+  background: url(../images/squer.png) no-repeat;
+  width: 412px;
+  height: 257px;
+  font-size: 18px;
+  float: left;
+  margin-right: 98px;
+  cursor: pointer;
+}
+.content .address ul li {
+  height: 85px;
+  padding-left: 25px;
+  line-height: 85px;
+}
+.content .address .doaddress {
+  width: 350px;
+  height: 90px;
+  line-height: 90px;
+}
+.content .address .doaddress a {
+  padding-left: 70px;
+  color: #2c2c2c;
+  font-size: 18px;
+}
+.content .goodsmessage table {
+  border-collapse: collapse;
+}
+.content .goodsmessage table tr {
+  border: 1px #2c2c2c solid;
+}
+.content .goodsmessage table tr td {
+  vertical-align: middle;
+  width: 300px;
+  padding: 15px;
+}
+.content .goodsmessage table .way {
+  padding-top: 5px;
+  font-size: 18px;
+}
+.content .goodsmessage table .way li {
+  padding-bottom: 35px;
+}
+.content .goodsmessage table .way .title input {
+  margin-left: 48px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #101113;
+  vertical-align: bottom;
+}
+.content .goodsmessage table .way .title input[type=checkbox]:checked {
+  background: url("../images/checkbox_icon.png") no-repeat center;
+}
+.content .goodsmessage table .way span {
+  padding: 0 5px;
+}
+.content .goodsmessage table .way .second-title {
+  float: left;
+}
+.content .goodsmessage table .way .selectstyle select::-ms-expand {
+  display: none;
+}
+.content .goodsmessage table .way .selectstyle select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: url("../images/confirm_orderbottom.png") no-repeat scroll right center transparent;
+  -moz-appearance: none;
+  padding-right: 34px;
+  margin-bottom: 35px;
+  font-size: 16px;
+  color: #6e6d6d;
+  border: 1px solid #ff0000;
+  height: 25px;
+}
+.content .goodsmessage table .way textarea {
+  width: 438px;
+  height: 128px;
+}
+.content .goodsmessage table .submit {
+  float: right;
+}
+.content .goodsmessage table .submit p {
+  float: left;
+  margin-left: 50px;
+  line-height: 68px;
+  padding: 0 10px;
+}
+.content .goodsmessage table .submit p span {
+  color: #ff0000;
+}
+.content .goodsmessage table .submit p:first-child {
+  font-size: 18px;
+}
+.content .goodsmessage table .submit p:nth-child(2) {
+  font-size: 28px;
+}
+.content .goodsmessage table .submit input {
+  border: none;
+  width: 134px;
+  height: 58px;
+  background-color: #b40303;
+  color: #fff;
+  font-size: 26px;
+}

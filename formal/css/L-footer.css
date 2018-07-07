@@ -1,0 +1,135 @@
+html {
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header,
+footer,
+nav,
+section,
+article {
+  display: block;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  outline: none;
+}
+.cur {
+  cursor: pointer;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.auto {
+  margin: 0 auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.txtcenteralign {
+  text-align: center;
+}
+footer {
+  margin-top: 120px;
+}
+footer .footerone {
+  width: 1200px;
+  margin: 0 auto;
+}
+footer .footerone .first-footer {
+  width: 783px;
+  margin: 0 auto;
+}
+footer .footerone .first-footer li {
+  width: 126px;
+  padding: 0 62px;
+  float: left;
+}
+footer .footerone .first-footer li a {
+  width: 84px;
+  height: 84px;
+  display: block;
+  margin: 0 auto;
+}
+footer .footerone .first-footer li a p {
+  position: relative;
+  top: 94px;
+  left: -21px;
+  font-size: 18px;
+  width: 150px;
+  color: #2c2c2c;
+}
+footer .footerone .first-footer li:first-child a {
+  background: url(../images/ft1.png) no-repeat;
+}
+footer .footerone .first-footer li:nth-child(2) a {
+  background: url(../images/ft2.png) no-repeat;
+}
+footer .footerone .first-footer li:last-child a {
+  background: url(../images/ft3.png) no-repeat;
+}
+footer .footerone .second-footer {
+  padding-top: 60px;
+  width: 1002px;
+  margin: 0 auto;
+}
+footer .footerone .second-footer dl {
+  float: left;
+  padding-right: 138px;
+}
+footer .footerone .second-footer dl dt {
+  font-size: 22px;
+}
+footer .footerone .second-footer dl dd {
+  font-size: 16px;
+}
+footer .footerone .second-footer dl dd a {
+  color: #2c2c2c;
+}
+footer .footerone .second-footer dl:last-child {
+  padding-right: 0;
+}
+footer .footertwo {
+  background-color: #101113;
+  height: 70px;
+  margin-top: 55px;
+}
+footer .footertwo .copyright {
+  line-height: 70px;
+  width: 783px;
+  margin: 0 auto;
+}
+footer .footertwo .copyright p {
+  color: #fff;
+  font-size: 14px;
+}
+footer .footertwo .copyright p:first-child {
+  float: left;
+}
+footer .footertwo .copyright p:last-child {
+  float: right;
+}
