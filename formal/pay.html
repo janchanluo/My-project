@@ -112,20 +112,20 @@
 
      <section class="payuse">
          <div class="title">
-             选择支付方式>
+             选择支付方式
          </div>
          <div class="payway"><p>网银支付：</p>
             <p class="borderbottom"></p>
             <div class="paybank">
             <ul class="left">
-                <li><input type="checkbox" name="" id=""><span></span><strong>中国农业银行</strong></li>
-                <li><input type="checkbox" name="" id=""><span></span><strong>中国银行</strong></li>
-                <li><input type="checkbox" name="" id=""><span></span><strong>邮政储蓄银行</strong></li>
+                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>中国农业银行</strong></li>
+                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>中国银行</strong></li>
+                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>邮政储蓄银行</strong></li>
             </ul>
             <ul class="right">
-                <li><input type="checkbox" name="" id=""><span></span><strong>中国工商银行</strong></li>
-                <li><input type="checkbox" name="" id=""><span></span><strong>中国建设银行</strong></li>
-                <li><input type="checkbox" name="" id=""><span></span><strong>中国民生银行</strong></li>
+                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>中国工商银行</strong></li>
+                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>中国建设银行</strong></li>
+                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>中国民生银行</strong></li>
             </ul>
         </div>
         </div>
@@ -135,8 +135,8 @@
       
             <ul class="right">
                 <div class="roofpay">
-                <li><input type="checkbox" name="" id=""><span></span><strong>支付宝</strong></li>
-                <li><input type="checkbox" name="" id=""><span></span><strong>微信</strong></li>
+                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>支付宝</strong></li>
+                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>微信</strong></li>
             </div>
         
             </ul>
@@ -148,12 +148,12 @@
                 <p>支付金额：<span>￥132.00</span></p>
                 <p><span></span>您在安全的环境中，请放心使用！</p>
                 <div>
-                    <input type="password">
-                    <input type="password">
-                    <input type="password">
-                    <input type="password">
-                    <input type="password">
-                    <input type="password">
+                    <input maxlength="1" minlength="1" type="password">
+                    <input maxlength="1" minlength="1" type="password">
+                    <input maxlength="1" minlength="1"type="password">
+                    <input maxlength="1" minlength="1" type="password">
+                    <input maxlength="1" minlength="1" type="password">
+                    <input maxlength="1" minlength="1"type="password">
                     <a href="#">忘记密码？</a>
                 </div>
                 <p class="sixpw">请输入6位数字支付密码</p>
@@ -231,4 +231,15 @@
 </body>
 <script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
 <script src="../js/index.js"></script>
+<script>
+
+    $(".paybank div, .roofpay div").click(function(){
+        if(!$(this).attr("class")){
+            $(this).addClass("checked");
+        }
+        else{
+            $(this).removeClass("checked");
+        }
+    })
+</script>
 </html>

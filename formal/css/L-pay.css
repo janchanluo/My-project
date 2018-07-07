@@ -130,15 +130,21 @@ a {
   font-size: 20px;
   font-weight: 400;
 }
-.content .payuse .payway li input[type=checkbox] {
-  margin-top: 11px;
+.content .payuse .payway li div {
+  background: url(../images/radius.png) no-repeat;
   width: 22px;
   height: 22px;
-  -webkit-appearance: none;
-  background: url(../images/radius.png) no-repeat;
+  margin-top: 11px;
+  cursor: pointer;
+  display: inline-block;
 }
-.content .payuse .payway li input[type=checkbox]:checked {
+.content .payuse .payway li input[type=checkbox] {
+  display: none;
+}
+.content .payuse .payway li .checked {
   background: url("../images/checkedradius.png") no-repeat;
+  width: 22px;
+  height: 22px;
 }
 .content .payuse .payway .left {
   float: left;
