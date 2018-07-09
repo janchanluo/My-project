@@ -112,6 +112,8 @@ header .header-top .search {
   padding-top: 35px;
 }
 header .header-top .search .search-input {
+  position: relative;
+  left: -122px;
   float: left;
 }
 header .header-top .search .search-input ul > li {
@@ -123,21 +125,21 @@ header .header-top .search .search-input ul > li {
 header .header-top .search .search-input ul > li:hover {
   color: #ff0000;
 }
-header .header-top .search input[type=text] {
+header .header-top .search .search-input input[type=text] {
   width: 355px;
   height: 45px;
   border: 3px solid #101113;
   padding-left: 10px;
 }
-header .header-top .search input[type=button] {
+header .header-top .search .search-input input[type=button] {
   margin-right: 35px;
   width: 122px;
   color: #fff;
   cursor: pointer;
   height: 51px;
-  position: relative;
-  top: 2px;
-  left: -4px;
+  position: absolute;
+  top: 0;
+  right: -122px;
   background-color: #101113;
   border: none;
 }
@@ -201,6 +203,13 @@ header .header-bottom .trigonTop {
   margin: 0 auto;
   height: 14px;
 }
+header .header-bottom .trigonTopnodisplay {
+  background: url(../images/trigonTop.png) no-repeat;
+  width: 22px;
+  display: block;
+  margin: 0 auto;
+  height: 14px;
+}
 header .header-bottom .title-ulhover {
   background-color: #101113;
 }
@@ -210,17 +219,21 @@ header .header-bottom .one > li:first-child {
   margin-top: -20px;
   width: 180px;
 }
+header .header-bottom .one > li:first-child:hover {
+  color: #fff;
+}
 header .header-bottom .one > li:first-child .title-ul {
   position: absolute;
   display: none;
   text-align: center;
   z-index: 1;
+  margin-top: -5px;
 }
 header .header-bottom .one > li:first-child .title-ul li {
   padding: 20px 0;
   clear: both;
   width: 180px;
-  height: 25px;
+  height: 20px;
   margin: 1px 0;
   background-color: #e6e0e0;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="" href="../css/L-pay.css">
+    <link rel="stylesheet" type="" href="../css/L-address.css">
     <link rel="stylesheet" type="" href="../css/L-footer.css">
     <link rel="stylesheet" type="" href="../css/L-header.css">
     <!-- <script src="https://cdn.bootcss.com/less.js/2.7.3/less.min.js"></script> -->
@@ -89,80 +89,103 @@
       </div>
     </header>  
     <div class="content clearfix"> 
-     <div class="title clearfix">
-         <ul>
-             <li>当前位置：</li>
-             <li><a href="index.html">首页</a><span>></span></li>
-             <li><a href="order.html">我的订单</a>><span>></span></li>
-             <li>支付页</li>
-         </ul>
-     </div>
-     <div class="pay">
-         <div class="okimg"></div>
-         <div class="checkmoney">
-             <ul>
-                 <li>您的订单已生成，请尽快付款</li>
-                 <li>应付金额：<span>￥132.00</span></li>
-                 <li>请您在提交订单后72小时完成支付，否则订单会自动取消</li>
-             </ul>
-         </div>
-     </div>
-
-     <p class="borderbottom"></p>
-
-     <section class="payuse">
-         <div class="title">
-             选择支付方式
-         </div>
-         <div class="payway"><p>网银支付：</p>
-            <p class="borderbottom"></p>
-            <div class="paybank">
-            <ul class="left">
-                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>中国农业银行</strong></li>
-                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>中国银行</strong></li>
-                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>邮政储蓄银行</strong></li>
-            </ul>
-            <ul class="right">
-                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>中国工商银行</strong></li>
-                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>中国建设银行</strong></li>
-                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>中国民生银行</strong></li>
-            </ul>
+            <div class="title clearfix">
+                    <ul>
+                        <li>当前位置：</li>
+                        <li><a href="index.html">首页</a><span>></span></li>
+                        <li><a href="order.html">个人中心</a><span>></span></li>
+                        <li>地址管理</li>
+                    </ul>   
         </div>
+        <div class="sidebar">
+            <h2>个人中心</h2>
+            <ul class="first-ul">
+                <li><a href="">会员中心</a></li>
+                <li><a href="">我的购物车</a></li>
+                <li><a href="">我的订单</a></li>
+                <li><a href="">我的收藏</a></li>
+                <li><a href="com_details.html">评价列表</a></li>
+                <li class="current"><a href="">地址管理</a></li>
+                <li><a href=""></a>账户余额</li>
+            </ul>
+            <h2>我的账户</h2>
+            <ul class="second-ul">
+                <li><a href="">账户管理</a></li>
+                <li><a href="">个人信息</a></li>
+            </ul>
+            <h2>退款维护</h2>
+            <ul class="third-ul">
+                    <li><a href="">系统信息</a></li>
+                    <li><a href="">举报管理</a></li>
+                </ul>
         </div>
-        <div class="payway"><p>平台支付：</p>
-            <p class="borderbottom"></p>
-            <div class="payuse">
-      
-            <ul class="right">
-                <div class="roofpay">
-                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>支付宝</strong></li>
-                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>微信</strong></li>
+        <div class="main">
+            <div class="adress">
+                <p>地址管理：</p>
+                <button>新增地址+</button>
             </div>
-        
-            </ul>
+           <div class="address-list">
+               <table cellspacing="0">
+                   <tr class="title">
+                       <th>姓名</th>
+                       <th>所在地区</th>
+                       <th>详细地址</th>
+                       <th>联系电话</th>
+                       <th>操作</th>
+                   </tr>
+                   <tr>
+                       <td>小提莫</td>
+                       <td>瓦罗兰大陆班德尔城</td>
+                       <td>侦查总队12幢6楼12号</td>
+                       <td>15847445689</td>
+                       <td>
+                           <a href="#">修改</a> <a href="#">删除</a>
+                    <p class="default">默认地址</p>
+                    </td>
+                   </tr>
+                   <tr>
+                        <td>小提莫</td>
+                        <td>瓦罗兰大陆班德尔城</td>
+                        <td>侦查总队12幢6楼12号</td>
+                        <td>15847445689</td>
+                        <td><a href="#">修改</a> <a href="#">删除</a>  <p>设为默认地址</p></td>
+                       
+                    </tr>
+                    <tr>
+                            <td>小提莫</td>
+                            <td>瓦罗兰大陆班德尔城</td>
+                            <td>侦查总队12幢6楼12号</td>
+                            <td>15847445689</td>
+                            <td><a href="#">修改</a> <a href="#">删除</a> <p>设为默认地址</p> </td>
+                           
+                    </tr>
+                     <tr>
+                                <td>小提莫</td>
+                                <td>瓦罗兰大陆班德尔城</td>
+                                <td>侦查总队12幢6楼12号</td>
+                                <td>15847445689</td>
+                                <td><a href="#">修改</a> <a href="#">删除</a>  <p>设为默认地址</p> </td>
+                       
+                     </tr>
+                   
+               </table>
+           </div>
+           <div class="page">
+                <a class="previous" href="#" onclick="firstPage();">上一页</a>   
+                <div class="pagenum">
+                <a href="#" onclick="nextPage();">1</a> 
+                <a href="#" onclick="nextPage();">2</a>   
+                <a href="#" onclick="nextPage();">3</a>   
+                <a href="#" onclick="nextPage();">15</a>   
+            </div>  
+                <a class="nextpage" href="#" onclick="previousPage();">下一页</a>
+                跳转至<input class="choosepage" type="text" maxlength="">页  
+                <a class="lastpage" href="#" onblur="lastPage();">确定</a>	
+    
+
         </div>
         </div>
-    </section>
-    <p class="borderbottom"></p>
-    <form action="pay_failure.html">
-        <div class="surepay">
-                <p>支付金额：<span>￥132.00</span></p>
-                <p><span></span>您在安全的环境中，请放心使用！</p>
-                <div>
-                    <input maxlength="1" minlength="1" type="password">
-                    <input maxlength="1" minlength="1" type="password">
-                    <input maxlength="1" minlength="1"type="password">
-                    <input maxlength="1" minlength="1" type="password">
-                    <input maxlength="1" minlength="1" type="password">
-                    <input maxlength="1" minlength="1"type="password">
-                    <a href="#">忘记密码？</a>
-                </div>
-                <p class="sixpw">请输入6位数字支付密码</p>
-                <input type="submit" name="submit" value="确认付款">
-            </div>
-        </form>
-        </div>
-  
+  </div>
   
         <footer>
         <div class="footerone">
@@ -233,14 +256,5 @@
 <script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
 <script src="../js/index.js"></script>
 <script>
-
-    $(".paybank div, .roofpay div").click(function(){
-        if(!$(this).attr("class")){
-            $(this).addClass("checked");
-        }
-        else{
-            $(this).removeClass("checked");
-        }
-    })
 </script>
 </html>

@@ -1,52 +1,69 @@
-:root{ 
-	--mywidth: 100%;
-	--myheight: 600px;
-}
-.carousel-content{
-	width: var(--mywidth);
-	height: var(--myheight);
+.flexslider {
 	position: relative;
 	overflow: hidden;
+	background: url(../images/loading.gif) 50% no-repeat;
 }
-.carousel{
-	height: var(--myheight);
+
+.slides {
+	position: relative;
+	z-index: 1;
+}
+
+.flex-control-nav {
 	position: absolute;
+	bottom: 10px;
+	z-index: 2;
+	width: 100%;
+	text-align: center;
 }
-.carousel li{
-	float: left;
-}
-.img-index{
-	position: absolute;
-    bottom: 8px;
-    left: 50%;
-    display: flex;
-    justify-content: center;
-}
-.img-index li{
-	float: left;
-    width: 18px;
-    height: 18px;
-    line-height: 18px;
-    text-align: center;
-    background-color: rgba(0,0,0,0.2);
-    font-size: 12px;
-    cursor: pointer;
-    margin: 0 3px;
-    color: #fff;
-}
-.img-index li.js_index,.img-index li:hover{
-	background-color: rgba(0,0,0,0.7);
-}
-.carousel-prev,.carousel-next{
-	position: absolute;
+
+.flex-control-nav li {
 	display: inline-block;
-	top: 45%;
+	width: 14px;
+	height: 14px;
+	margin: 0 5px;
+	*display: inline;
+	zoom: 1;
+}
+
+.flex-control-nav a {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	line-height: 40px;
+	overflow: hidden;
+	background: url(../images/dot.png) right 0 no-repeat;
 	cursor: pointer;
-    display: none;
 }
-.carousel-prev{
-	left: 0;
+
+.flex-control-nav .flex-active {
+	background-position: 0 0;
 }
-.carousel-next{
-	right: 0;
+
+
+
+.flex-direction-nav {
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	top: 45%;
+}
+
+.flex-direction-nav li a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	cursor: pointer;
+	position: absolute;
+}
+
+.flex-direction-nav li a.flex-prev {
+	left: 40px;
+	background: url(../images/prev.png) center center no-repeat;
+}
+
+.flex-direction-nav li a.flex-next {
+	right: 40px;
+	background: url(../images/next.png) center center no-repeat;
 }

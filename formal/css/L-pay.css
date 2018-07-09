@@ -58,6 +58,9 @@ a {
   padding-top: 40px;
   margin: 0 auto;
 }
+.content .title {
+  padding: 15px 0;
+}
 .content .title ul li {
   float: left;
 }
@@ -69,7 +72,7 @@ a {
 }
 .content .pay {
   width: 784px;
-  margin: 50px 0 0 35px;
+  margin: 35px 0 0 35px;
 }
 .content .pay .okimg {
   background: url(../images/ok.png) no-repeat;

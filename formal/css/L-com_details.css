@@ -58,6 +58,9 @@ a {
   padding-top: 40px;
   margin: 0 auto;
 }
+.content .title {
+  padding: 15px 0;
+}
 .content .title ul li {
   float: left;
 }
@@ -66,9 +69,6 @@ a {
 }
 .content .title ul li:last-child {
   color: #ff0000;
-}
-.content .goodsmessage {
-  margin-top: 15px;
 }
 .content .goodsmessage .left .goodsshow {
   float: left;
