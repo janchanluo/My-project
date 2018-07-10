@@ -58,6 +58,7 @@ a {
   width: 100%;
   overflow: hidden;
   position: relative;
+  z-index: -1;
 }
 #content {
   width: 1200px;

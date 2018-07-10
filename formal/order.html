@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="" href="../css/L-comment.css">
+    <link rel="stylesheet" type="" href="../css/L-order.css">
     <link rel="stylesheet" type="" href="../css/L-footer.css">
     <link rel="stylesheet" type="" href="../css/L-header.css">
     <!-- <script src="https://cdn.bootcss.com/less.js/2.7.3/less.min.js"></script> -->
@@ -133,11 +133,9 @@
                     <a href="#">个人中心</a>
                     <span>></span>
                 </li>
-                <li>
-                    <a href="order.html">我的订单</a>
-                    <span>></span>
+                <li  class="current">
+                        我的订单
                 </li>
-                <li>待评价</li>
             </ul>
         </div>
         <div class="commen-list">
@@ -183,67 +181,133 @@
                 </li>
             </ul>
         </div>
-        <div class="evaluate">
-            <div class="title">
-                <p>评价宝贝：</p>
+        <div class="main">
+            <div class="main-header clearfix">
+                <ul>
+                    <li><a class="current" href="">所有订单</a><span class="borderHover"></span></li>
+                    <li><a href="">待付款</a></li>
+                    <li><a href="">待收货</a></li>
+                    <li><a href="">待评价</a></li>
+                    <li><a href="">已完成</a></li>
+                </ul>
             </div>
-            <div class="pro_details">
-                <img src="../images/comment.png" alt="">
-                <div class="goods">
-                    <p>莱美斯德国进口水晶玻璃红酒杯 高精度加工品
-                    </p>
-                    <p>规格：450ML</p>
-                    <p>价格：
-                        <em>￥</em>
-                        <span>66.00</span>
-                    </p>
+            <div class="order-search">
+                <form action="">
+                    <span>下单时间：</span>
+                    <input type="text">--<input type="text">
+                 <div class="search-input">
+                    <input class="search" type="text">
+                    <input class="sbbmit"  type="submit" value="订单搜索"> 
                 </div>
-     
-                <div class="myevaluate">
-                    <p class="title">我的评价:</p>
-                    <form>  
-                    <div class="comment">
-                        <p>宝贝与描述相符
-                            <span class="starred"></span>
-                            <span class="starred"></span>
-                            <span class="starred"></span>
-                            <span class="starred"></span>
-                            <span class="starred"></span>
-                        </p>
-                        <p>卖家的服务态度
-                            <span class="stargrey"></span>
-                            <span class="stargrey"></span>
-                            <span class="stargrey"></span>
-                            <span class="stargrey"></span>
-                            <span class="stargrey"></span>
-                        </p>
-                        <p>物流服务的质量
-                            <span class="stargrey"></span>
-                            <span class="stargrey"></span>
-                            <span class="stargrey"></span>
-                            <span class="stargrey"></span>
-                            <span class="stargrey"></span>
-                        </p>
-                    </div>
-                    <div class="textarea">
-                    <textarea  onchange="this.value=this.value.substring(0, 500)" 
-                    onkeydown="this.value=this.value.substring(0, 500)"
-                     onkeyup="this.value=this.value.substring(0, 500)"   
-                      style="resize:none"  name="" id="" cols="60" rows="10"></textarea><span class="txtnum">限500字</span>
-                    </div>
-                   <div class="file">
-                        <a href="javascript:;" class="upload">上传图片
-                                <input class="change" type="file" />
-                            </a>
-                       <div><input type="checkbox" name="" id=""></div><span>匿名</span>
-                       <div><input type="checkbox" name="" id=""></div><span>公开</span>
-                 </div>
-                 <button>提交评价</button>
                 </form>
-                    </div>
             </div>
-        </div>
+           <div class="order">
+               <table>
+               <tr>
+                   <th>订单号：<span class="orderNum">HGFDCGGUUY45RGD</span></th>
+                   <th>收货人：<span class="userName">小提莫</span></th>
+                   <th>时间：<span class="time">2017.10.15  09：20</span></th>
+               </tr>
+               <tr>
+                   <td class="googsImg"> 
+                        <img src="../images/user_goods01.png" alt="">
+                        <dl> <dd>莱美斯德国进口水晶玻璃红酒杯</dd>
+                            <dd>高精度加工品</dd>
+                                <dd> 规格：450ML </dd>
+                            </dl>
+                  </td>
+                  <td class="money"> 
+                      <div> 
+                      <p><em>￥</em>66.00</p> 
+                        <p><em>￥</em>66.00</p> 
+                    </div> 
+                        <span class="success">交易完成</span>
+                    </td>
+                    <td class="userDo"> 
+                            <p class="comment"><a href="">去评价>></a></p> 
+                            <p class="order_deta"><a href="">订单详情>></a></p> 
+                         
+                          </td>
+               </tr>
+            </table>
+           </div>
+           <div class="order">
+                <table>
+                <tr>
+                    <th>订单号：<span class="orderNum">HGFDCGGUUY45RGD</span></th>
+                    <th>收货人：<span class="userName">小提莫</span></th>
+                    <th>时间：<span class="time">2017.10.15  09：20</span></th>
+                </tr>
+                <tr>
+                    <td class="googsImg"> 
+                         <img src="../images/user_goods01.png" alt="">
+                         <dl> <dd>莱美斯德国进口水晶玻璃红酒杯</dd>
+                             <dd>高精度加工品</dd>
+                                 <dd> 规格：450ML </dd>
+                             </dl>
+                   </td>
+                   <td class="money"> 
+                       <div> 
+                       <p><em>￥</em>66.00</p> 
+                         <p><em>￥</em>66.00</p> 
+                     </div> 
+                         <span class="success">交易完成</span>
+                     </td>
+                     <td class="userDo"> 
+                             <p><a href="">去评价>></a></p> 
+                             <p class="order_deta"><a href="">订单详情>></a></p> 
+                          
+                           </td>
+                </tr>
+             </table>
 
+            </div>
+            <div class="order">
+                    <table>
+                    <tr>
+                        <th>订单号：<span class="orderNum">HGFDCGGUUY45RGD</span></th>
+                        <th>收货人：<span class="userName">小提莫</span></th>
+                        <th>时间：<span class="time">2017.10.15  09：20</span></th>
+                    </tr>
+                    <tr>
+                        <td class="googsImg"> 
+                             <img src="../images/user_goods01.png" alt="">
+                             <dl> <dd>莱美斯德国进口水晶玻璃红酒杯</dd>
+                                 <dd>高精度加工品</dd>
+                                     <dd> 规格：450ML </dd>
+                                 </dl>
+                       </td>
+                       <td class="money"> 
+                           <div> 
+                           <p><em>￥</em>66.00</p> 
+                             <p><em>￥</em>66.00</p> 
+                         </div> 
+                             <span class="success">交易完成</span>
+                         </td>
+                         <td class="userDo"> 
+                                 <p><a href="">去评价>></a></p> 
+                                 <p class="order_deta"><a href="">订单详情>></a></p> 
+                              
+                               </td>
+                    </tr>
+                 </table>
+                </div>
+                <div class="page">
+                        <a class="previous" href="#" onclick="firstPage();">上一页</a>   
+                        <div class="pagenum">
+                        <a href="#" onclick="nextPage();">1</a> 
+                        <a href="#" onclick="nextPage();">2</a>   
+                        <a href="#" onclick="nextPage();">3</a>   
+                        <a href="#" onclick="nextPage();">99</a>   
+                    </div>  
+                        <a class="nextpage" href="#" onclick="previousPage();">下一页</a>
+                        跳转至<input class="choosepage" type="text" maxlength="">页  
+                        <a class="lastpage" href="#" onblur="lastPage();">确定</a>	
+            
+
+                </div>
+        </div>
+   
     </div>
 
     <footer>

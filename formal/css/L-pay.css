@@ -141,8 +141,11 @@ a {
   cursor: pointer;
   display: inline-block;
 }
-.content .payuse .payway li input[type=checkbox] {
-  display: none;
+.content .payuse .payway li input[type=radio] {
+  opacity: 0;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
 }
 .content .payuse .payway li .checked {
   background: url("../images/checkedradius.png") no-repeat;

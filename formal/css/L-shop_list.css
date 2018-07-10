@@ -1,0 +1,276 @@
+html {
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header,
+footer,
+nav,
+section,
+article {
+  display: block;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  outline: none;
+}
+.cur {
+  cursor: pointer;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.auto {
+  margin: 0 auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.txtcenteralign {
+  text-align: center;
+}
+.hoverblack {
+  width: 100%;
+  height: 6px;
+  background-color: #101113;
+  position: absolute;
+  margin-top: 30px;
+}
+.content {
+  width: 1200px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+.content .title {
+  padding: 15px 0;
+}
+.content .title ul li {
+  float: left;
+}
+.content .title ul li a {
+  color: #2c2c2c;
+}
+.content .title ul li:last-child {
+  color: #ff0000;
+}
+.content .classify {
+  border: 1px #000 solid;
+  min-height: 380px;
+}
+.content .classify .classify-title {
+  background-color: #343434;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+}
+.content .classify .classify-title .list-title {
+  float: left;
+}
+.content .classify .classify-title .list-title span {
+  background: url(../images/shop_liststar.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  float: left;
+  margin-top: 8px;
+}
+.content .classify .classify-title .list-title p {
+  color: #fff;
+  font-size: 20;
+  margin-left: 35px;
+}
+.content .classify .classify-title .search {
+  float: right;
+  margin-right: 200px;
+}
+.content .classify .classify-title .search input {
+  height: 30px;
+  width: 170px;
+  border: none;
+}
+.content .classify .classify-title .search button {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 14;
+  width: 50px;
+  height: 32px;
+  margin-left: -5px;
+}
+.content .classify .classifycontent {
+  padding-top: 5px;
+}
+.content .classify .classifycontent table {
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 auto;
+}
+.content .classify .classifycontent table tr th {
+  font-size: 20;
+  font-weight: 400;
+}
+.content .classify .classifycontent table tr td {
+  padding: 1px 40px;
+  border-right: 1px #afafaf solid;
+}
+.content .classify .classifycontent table tr td a {
+  color: #2c2c2c;
+}
+.content .classify .classifycontent table tr td .current {
+  color: #ff0000;
+}
+.content .classify .classifycontent table tr td:last-child {
+  border-right: none;
+}
+.content .mychoose {
+  float: right;
+  margin-top: 20px;
+  border-bottom: 3px solid #000;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+.content .mychoose p {
+  float: left;
+}
+.content .mychoose .restart {
+  float: left;
+  margin: 0 15px;
+}
+.content .mychoose .restart span {
+  background: url(../images/shop_list_restart.png) no-repeat;
+  display: inline-block;
+  width: 18px;
+  height: 15px;
+  margin: 0 5px;
+}
+.content .mychoose .restart a {
+  color: #000;
+}
+.content .shop-list {
+  clear: both;
+  font-size: 18px;
+}
+.content .shop-list .list-title {
+  position: relative;
+}
+.content .shop-list .list-title p span.list-bottom {
+  background: url(../images/shop_listpicbottom.png) no-repeat;
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  margin-left: 5px;
+}
+.content .shop-list .list-title ul {
+  margin-top: 3px;
+  width: 655px;
+  border-bottom: 3px solid #000;
+  height: 30px;
+}
+.content .shop-list .list-title ul li {
+  float: left;
+  padding-left: 35px;
+}
+.content .shop-list .list-title ul li a {
+  color: #000;
+}
+.content .shop-list .list-title ul li a:hover {
+  color: #ff0000;
+}
+.content .shop-list .list-title ul li .current {
+  color: #ff0000;
+}
+.content .shop-list .list-title .list-tx {
+  background: url(../images/shop_list_tx.png) repeat-x;
+  width: 135px;
+  height: 63px;
+  display: inline-block;
+  position: absolute;
+  right: 508px;
+  bottom: 0px;
+}
+.content .shop-list .list ul li {
+  float: left;
+  padding-top: 40px;
+  padding-right: 40px;
+}
+.content .shop-list .list ul li img {
+  width: 270px;
+  height: 255px;
+}
+.content .shop-list .list ul li:nth-child(4n) {
+  padding-right: 0;
+}
+.content .shop-list .list .goodsMessage span {
+  display: inline-block;
+}
+.content .shop-list .list .goodsMessage span.money {
+  float: left;
+  font-size: 20px;
+  color: #ff0000;
+}
+.content .shop-list .list .goodsMessage span.money em {
+  font-style: normal;
+}
+.content .shop-list .list .goodsMessage span.paynum {
+  float: right;
+  color: #7a7979;
+  font-size: 12px;
+}
+.content .shop-list .list .goodsMessage span.message {
+  clear: both;
+  display: block;
+  font-size: 18px;
+  color: #000;
+}
+.content .shop-list .page {
+  text-align: center;
+  margin-top: 85px;
+}
+.content .shop-list .page a.previous,
+.content .shop-list .page a.nextpage,
+.content .shop-list .page a.lastpage {
+  background-color: #080808;
+  padding: 5px 10px;
+  color: #fff;
+}
+.content .shop-list .page .pagenum {
+  display: inline;
+}
+.content .shop-list .page .pagenum a {
+  background-color: #d9d6d6;
+  padding: 5px 10px;
+  color: #000;
+}
+.content .shop-list .page input.choosepage {
+  border: 1px solid #4f4d4d;
+  text-align: center;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}

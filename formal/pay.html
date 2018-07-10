@@ -118,14 +118,14 @@
             <p class="borderbottom"></p>
             <div class="paybank">
             <ul class="left">
-                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>中国农业银行</strong></li>
-                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>中国银行</strong></li>
-                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>邮政储蓄银行</strong></li>
+                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>中国农业银行</strong></li>
+                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>中国银行</strong></li>
+                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>邮政储蓄银行</strong></li>
             </ul>
             <ul class="right">
-                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>中国工商银行</strong></li>
-                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>中国建设银行</strong></li>
-                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>中国民生银行</strong></li>
+                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>中国工商银行</strong></li>
+                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>中国建设银行</strong></li>
+                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>中国民生银行</strong></li>
             </ul>
         </div>
         </div>
@@ -135,8 +135,8 @@
       
             <ul class="right">
                 <div class="roofpay">
-                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>支付宝</strong></li>
-                <li><div><input type="checkbox" name="" id=""></div><span></span><strong>微信</strong></li>
+                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>支付宝</strong></li>
+                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>微信</strong></li>
             </div>
         
             </ul>
@@ -234,13 +234,13 @@
 <script src="../js/index.js"></script>
 <script>
 
-    $(".paybank div, .roofpay div").click(function(){
-        if(!$(this).attr("class")){
-            $(this).addClass("checked");
+    $(".payuse input[type=radio]").click(function(){
+        // console.log(inputindex)
+        if($(this).prop("checked")){
+            $(this).closest("div").addClass("checked");
+           
         }
-        else{
-            $(this).removeClass("checked");
-        }
+
     })
 </script>
 </html>
