@@ -1,0 +1,175 @@
+html {
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header,
+footer,
+nav,
+section,
+article {
+  display: block;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  outline: none;
+}
+.cur {
+  cursor: pointer;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.auto {
+  margin: 0 auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.txtcenteralign {
+  text-align: center;
+}
+.content {
+  width: 1200px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+.content .title {
+  padding: 15px 0;
+}
+.content .title ul li {
+  float: left;
+}
+.content .title ul li a {
+  color: #2c2c2c;
+}
+.content .title ul li:last-child {
+  color: #ff0000;
+}
+.content .shop_cart input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.content .shop_cart table {
+  width: 1200px;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+.content .shop_cart table tr th {
+  border-bottom: 1px solid #6e6d6d;
+  border-top: 1px solid #6e6d6d;
+  font-size: 18px;
+  padding: 10px 0;
+  font-weight: 400;
+}
+.content .shop_cart table tr th:first-child {
+  border-left: 1px solid #6e6d6d;
+}
+.content .shop_cart table tr th:last-child {
+  border-right: 1px solid #6e6d6d;
+}
+.content .shop_cart table tr td {
+  padding: 15px 0;
+  border-bottom: 1px solid #6e6d6d;
+  border-top: 1px solid #6e6d6d;
+}
+.content .shop_cart table tr td .num button {
+  background-color: #5d5a5a;
+  width: 30px;
+  height: 30px;
+  border: none;
+  color: #fff;
+  text-align: center;
+}
+.content .shop_cart table tr td .num input {
+  border: none;
+  text-align: center;
+  width: 60px;
+  height: 28px;
+  border-bottom: 1px solid #6e6d6d;
+  border-top: 1px solid #6e6d6d;
+}
+.content .shop_cart table tr td:first-child {
+  border-left: 1px solid #6e6d6d;
+}
+.content .shop_cart table tr td:last-child {
+  border-right: 1px solid #6e6d6d;
+}
+.content .shop_cart table tr td.goodsMessage {
+  text-align: left;
+  width: 500px;
+}
+.content .shop_cart table tr td.goodsMessage span {
+  float: left;
+}
+.content .shop_cart table tr td.goodsMessage dl {
+  margin: 10px 0 0 10px;
+  float: left;
+}
+.content .shop_cart table tr td.price {
+  font-size: 24px;
+  color: #ff0000;
+}
+.content .shop_cart table tr td.price em {
+  font-style: normal;
+}
+.content .shop_cart .balance {
+  border: 1px solid #000;
+  height: 55px;
+  line-height: 55px;
+  margin-top: 30px;
+}
+.content .shop_cart .balance ul {
+  font-size: 18px;
+}
+.content .shop_cart .balance ul li {
+  float: left;
+  padding-left: 44px;
+}
+.content .shop_cart .balance ul li button {
+  height: 55px;
+  padding: 0 35px;
+  border: none;
+  background-color: #b40303;
+  color: #fff;
+  cursor: pointer;
+}
+.content .shop_cart .balance ul li.price {
+  color: #ff0000;
+  font-size: 28px;
+}
+.content .shop_cart .balance ul li.price em {
+  font-style: normal;
+}
+.content .shop_cart .balance ul li.goodsNum span {
+  color: #ff0000;
+}
+.content .shop_cart .balance ul div.right {
+  float: right;
+}

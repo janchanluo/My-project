@@ -59,7 +59,6 @@ a {
   background-color: #101113;
   position: absolute;
   margin-top: 30px;
-  z-index: -1;
 }
 .content {
   width: 1200px;
@@ -109,16 +108,16 @@ a {
 }
 .content .goodsmessage .right {
   width: 595px;
-  margin-top: -25px;
   float: right;
 }
 .content .goodsmessage .right .title p:first-child {
-  font-size: 22px;
   line-height: 40px;
+  font-size: 22px;
+  margin-top: -10px;
 }
 .content .goodsmessage .right .title p:last-child {
+  line-height: 20px;
   margin-top: 10px;
-  line-height: 25px;
   font-size: 14px;
 }
 .content .goodsmessage .right .otermessage em {
@@ -129,8 +128,8 @@ a {
   font-size: 16px;
 }
 .content .goodsmessage .right .otermessage dd {
+  margin-top: 20px;
   padding-left: 80px;
-  margin-bottom: 20px;
 }
 .content .goodsmessage .right .otermessage dd.spec span {
   background-color: #e6e3e3 ;
@@ -177,7 +176,7 @@ a {
 }
 .content .goodsmessage .right .otermessage .submit {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 .content .goodsmessage .right .otermessage .submit button {
   background-color: #b40303;
@@ -260,7 +259,7 @@ a {
   color: #868585;
 }
 .content .section .comment {
-  width: 825px;
+  width: 873px;
   float: right;
 }
 .content .section .comment .comment-title ul {
@@ -279,7 +278,7 @@ a {
 .content .section .comment .comment-title ul li:hover {
   color: #ff0000;
 }
-.content .section .comment .comment-title ul li .hover_bottom {
+.content .section .comment .comment-title ul li strong {
   background-color: #101113;
   display: inline-block;
   height: 10px;
@@ -288,11 +287,7 @@ a {
   position: relative;
   top: -12px;
 }
-.content .section .comment .productInfo {
-  margin-top: 50px;
-  display: none;
-}
-.content .section .comment .productInfo .descripttion .left {
+.content .section .comment .descripttion .left {
   float: left;
   height: 354px;
   font-size: 20px;
@@ -301,187 +296,12 @@ a {
   padding: 10px 20px 0 20px;
   line-height: 35px;
 }
-.content .section .comment .productInfo .descripttion .left p {
+.content .section .comment .descripttion .left p {
   font-size: 24px;
 }
-.content .section .comment .productInfo .descripttion .left dt {
+.content .section .comment .descripttion .left dt {
   float: left;
 }
-.content .section .comment .productInfo .descripttion .right {
+.content .section .comment .descripttion .right {
   float: right;
-}
-.content .section .comment .productInfo .goodsShow {
-  margin-top: 130px;
-}
-.content .section .comment .productInfo .goodsShow .title {
-  text-align: center;
-}
-.content .section .comment .productInfo .goodsShow .title .border {
-  background-color: #545050;
-  height: 3px;
-  display: inline-block;
-  width: 100%;
-}
-.content .section .comment .productInfo .goodsShow .title .border .center {
-  width: 560px;
-  margin: 0 auto;
-  margin-top: -21px;
-}
-.content .section .comment .productInfo .goodsShow .title .border .center span {
-  font-size: 30px;
-  border: 3px solid #000;
-  background-color: #fff;
-}
-.content .section .comment .productInfo .goodsShow .title .border .center strong.left {
-  background: url(../images/pro_details_xie.png) repeat-x;
-  width: 72px;
-  height: 42px;
-  display: inline-block;
-  float: left;
-}
-.content .section .comment .productInfo .goodsShow .title .border .center strong.right {
-  background: url(../images/pro_details_xie.png) repeat-x;
-  width: 72px;
-  height: 42px;
-  display: inline-block;
-  float: right;
-}
-.content .section .comment .productInfo .goodsShow .goodsList {
-  text-align: center;
-  margin-top: 30px;
-}
-.content .section .comment .productInfo .goodsShow .goodsList ul {
-  margin-top: 50px;
-}
-.content .section .comment .productInfo .goodsShow .goodsList ul li:first-child {
-  margin-top: 0;
-}
-.content .section .comment .productInfo .goodsShow .goodsList ul li.goodsList_li {
-  margin-bottom: 50px;
-}
-.content .section .comment .productInfo .goodsShow .goodsList ul.litter li {
-  margin: 0;
-  float: left;
-  padding-right: 28px;
-}
-.content .section .comment .productInfo .goodsShow .goodsList ul.litter li:first-child {
-  float: left;
-  padding-left: 0;
-}
-.content .section .comment .productInfo .goodsShow .goodsList ul.litter li:last-child {
-  float: right;
-  padding-right: 0;
-}
-.content .section .comment .comment_all .praise {
-  margin-top: 75px;
-}
-.content .section .comment .comment_all .praise .left {
-  float: left;
-  color: #ff0000;
-  border: 2px solid #4f4d4d;
-  text-align: center;
-  width: 180px;
-  height: 165px;
-}
-.content .section .comment .comment_all .praise .left p.good {
-  font-size: 30px;
-  margin-top: 25px;
-}
-.content .section .comment .comment_all .praise .left p.much {
-  font-size: 60px;
-}
-.content .section .comment .comment_all .praise .right h2 {
-  position: relative;
-  font-size: 24px;
-  font-weight: 400;
-  left: 35px;
-}
-.content .section .comment .comment_all .praise .right ul {
-  text-align: center;
-}
-.content .section .comment .comment_all .praise .right ul li {
-  float: left;
-  border: 1px solid #101113;
-  margin: 10px 35px;
-  width: 110px;
-  height: 25px;
-}
-.content .section .comment .comment_all .comment-nav {
-  margin-top: 60px;
-}
-.content .section .comment .comment_all .comment-nav ul {
-  border-bottom: 1px solid #4f4d4d;
-  height: 30px;
-}
-.content .section .comment .comment_all .comment-nav ul li {
-  float: left;
-  cursor: pointer;
-  margin: 0 27px;
-}
-.content .section .comment .comment_all .comment-nav ul li:hover {
-  color: #ff0000;
-}
-.content .section .comment .comment_all .comment-nav ul li:first-child {
-  margin-left: 0;
-}
-.content .section .comment .comment_all .comment-list {
-  margin-top: 75px;
-}
-.content .section .comment .comment_all .comment-list .portrait {
-  text-align: center;
-  float: left;
-}
-.content .section .comment .comment_all .comment-list .commentmessage {
-  width: 615px;
-  font-size: 16px;
-  float: right;
-  position: relative;
-  left: -90px;
-}
-.content .section .comment .comment_all .comment-list .commentmessage .commentlook {
-  margin-top: 20px;
-}
-.content .section .comment .comment_all .comment-list .commentmessage .commentlook .userdo {
-  float: right;
-}
-.content .section .comment .comment_all .comment-list .commentmessage .commentlook .userdo p {
-  float: left;
-  padding-left: 28px;
-}
-.content .section .comment .comment_all .comment-list .commentmessage .commentlook .star {
-  float: left;
-}
-.content .section .comment .comment_all .comment-list .commentmessage .commentlook .star span {
-  background: url(../images/star.png) no-repeat;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-}
-.content .section .comment .page {
-  float: right;
-  position: relative;
-  left: -90px;
-}
-.content .section .comment .page a.previous,
-.content .section .comment .page a.nextpage,
-.content .section .comment .page a.lastpage {
-  background-color: #080808;
-  padding: 5px 10px;
-  color: #fff;
-}
-.content .section .comment .page .pagenum {
-  display: inline;
-}
-.content .section .comment .page .pagenum a {
-  background-color: #d9d6d6;
-  padding: 5px 10px;
-  color: #000;
-}
-.content .section .comment .page input.choosepage {
-  border: 1px solid #4f4d4d;
-  text-align: center;
-  vertical-align: middle;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
 }

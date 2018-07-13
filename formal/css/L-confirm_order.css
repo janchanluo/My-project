@@ -105,15 +105,34 @@ a {
   font-size: 18px;
 }
 .content .goodsmessage table {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  text-align: center;
 }
-.content .goodsmessage table tr {
-  border: 1px #2c2c2c solid;
+.content .goodsmessage table tr th {
+  border-bottom: 1px solid #6e6d6d;
+  border-top: 1px solid #6e6d6d;
+  padding: 15px;
+  font-weight: 400;
+}
+.content .goodsmessage table tr th:first-child {
+  border-left: 1px solid #6e6d6d;
+}
+.content .goodsmessage table tr th:last-child {
+  border-right: 1px solid #6e6d6d;
 }
 .content .goodsmessage table tr td {
   vertical-align: middle;
   width: 300px;
   padding: 15px;
+  border-bottom: 1px #6e6d6d solid;
+  border-top: 1px #6e6d6d solid;
+}
+.content .goodsmessage table tr td:first-child {
+  border-left: 1px solid #6e6d6d;
+}
+.content .goodsmessage table tr td:last-child {
+  border-right: 1px solid #6e6d6d;
 }
 .content .goodsmessage table .way {
   padding-top: 5px;

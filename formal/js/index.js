@@ -3,11 +3,12 @@ var twoli=$(".header-bottom>.two>li")
 firstli.hover(function(){
     $(this).addClass("title-ulhover");
     $(this).find("span").addClass("trigonBottom");
-    firstli.prop("color","#fff");
+    $(".shop-list").addClass("col");
     $(".title-ul").css("display","block");
 },function(){
     $(".title-ul").css("display","none");
     $(this).removeClass();
+    $(".shop-list").removeClass('col');
     // $(this).find("span").removeClass();
 })
 

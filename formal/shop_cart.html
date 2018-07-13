@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="" href="../css/L-pay.css">
+    <link rel="stylesheet" type="" href="../css/L-shop_cart.css">
     <link rel="stylesheet" type="" href="../css/L-footer.css">
     <link rel="stylesheet" type="" href="../css/L-header.css">
     <!-- <script src="https://cdn.bootcss.com/less.js/2.7.3/less.min.js"></script> -->
@@ -94,74 +94,115 @@
          <ul>
              <li>当前位置：</li>
              <li><a href="index.html">首页</a><span>></span></li>
-             <li><a href="order.html">我的订单</a>><span>></span></li>
-             <li>支付页</li>
+             <li>我的购物车</li>
          </ul>
      </div>
-     <div class="pay">
-         <div class="okimg"></div>
-         <div class="checkmoney">
-             <ul>
-                 <li>您的订单已生成，请尽快付款</li>
-                 <li>应付金额：<span>￥132.00</span></li>
-                 <li>请您在提交订单后72小时完成支付，否则订单会自动取消</li>
-             </ul>
-         </div>
-     </div>
-
-     <p class="borderbottom"></p>
-
-     <section class="payuse">
-         <div class="title">
-             选择支付方式
-         </div>
-         <div class="payway"><p>网银支付：</p>
-            <p class="borderbottom"></p>
-            <div class="paybank">
-            <ul class="left">
-                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>中国农业银行</strong></li>
-                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>中国银行</strong></li>
-                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>邮政储蓄银行</strong></li>
-            </ul>
-            <ul class="right">
-                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>中国工商银行</strong></li>
-                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>中国建设银行</strong></li>
-                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>中国民生银行</strong></li>
-            </ul>
-        </div>
-        </div>
-        <div class="payway"><p>平台支付：</p>
-            <p class="borderbottom"></p>
-            <div class="payuse">
-      
-            <ul class="right">
-                <div class="roofpay">
-                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>支付宝</strong></li>
-                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>微信</strong></li>
-            </div>
-        
-            </ul>
-        </div>
-        </div>
-    </section>
-    <p class="borderbottom"></p>
-    <form action="pay_failure.html">
-        <div class="surepay">
-                <p>支付金额：<span>￥132.00</span></p>
-                <p><span></span>您在安全的环境中，请放心使用！</p>
-                <div>
-                    <input maxlength="1" minlength="1" type="password">
-                    <input maxlength="1" minlength="1" type="password">
-                    <input maxlength="1" minlength="1"type="password">
-                    <input maxlength="1" minlength="1" type="password">
-                    <input maxlength="1" minlength="1" type="password">
-                    <input maxlength="1" minlength="1"type="password">
-                    <a href="#">忘记密码？</a>
-                </div>
-                <p class="sixpw">请输入6位数字支付密码</p>
-                <input type="submit" name="submit" value="确认付款">
-            </div>
-        </form>
+          <div class="shop_cart">
+              <table>
+                  <tr>
+                      <th><input type="checkbox">全选</th>
+                      <th>商品信息</th>
+                      <th>单价</th>
+                      <th>数量</th>
+                      <th>总价</th>
+                      <th>操作</th>
+                  </tr>
+                  <tr>  
+                      <td>
+                          <input type="checkbox">
+                      </td>
+                      <td class="goodsMessage clearfix">
+                        <span> <img src="../images/shop_cart_01.png" alt=""></span>
+                            <dl>莱美斯高端水晶玻璃红酒杯，高脚杯
+                                    <dd>1号杯  450ML </dd>
+                                    <dd>  单只包装  升级版</dd>
+                                </dl>
+                            </td>
+                      <td class="price"><em>￥</em><span>66.00</span></td>
+                      <td>
+                          <div class="num">
+                              <button>-</button><input type="number" value="1"><button>+</button>
+                          </div>
+                      </td>
+                      <td>￥66.00</td>
+                      <td>删除</td>
+                  </tr>
+                  <tr>  
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td class="goodsMessage clearfix">
+                          <span> <img src="../images/shop_cart_01.png" alt=""></span>
+                              <dl>莱美斯高端水晶玻璃红酒杯，高脚杯
+                                      <dd>1号杯  450ML </dd>
+                                      <dd>  单只包装  升级版</dd>
+                                  </dl>
+                              </td>
+                        <td class="price"><em>￥</em><span>66.00</span></td>
+                        <td>
+                            <div class="num">
+                                <button>-</button><input type="number" value="1"><button>+</button>
+                            </div>
+                        </td>
+                        <td>￥66.00</td>
+                        <td>删除</td>
+                    </tr>
+                    <tr>  
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td class="goodsMessage clearfix">
+                              <span> <img src="../images/shop_cart_01.png" alt=""></span>
+                                  <dl>莱美斯高端水晶玻璃红酒杯，高脚杯
+                                          <dd>1号杯  450ML </dd>
+                                          <dd>  单只包装  升级版</dd>
+                                      </dl>
+                                  </td>
+                            <td class="price"><em>￥</em><span>66.00</span></td>
+                            <td>
+                                <div class="num">
+                                    <button>-</button><input type="number" value="1"><button>+</button>
+                                </div>
+                            </td>
+                            <td>￥66.00</td>
+                            <td>删除</td>
+                        </tr>
+                        <tr>  
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td class="goodsMessage clearfix">
+                                  <span> <img src="../images/shop_cart_01.png" alt=""></span>
+                                      <dl>莱美斯高端水晶玻璃红酒杯，高脚杯
+                                              <dd>1号杯  450ML </dd>
+                                              <dd>  单只包装  升级版</dd>
+                                          </dl>
+                                      </td>
+                                <td class="price"><em>￥</em><span>66.00</span></td>
+                                <td>
+                                    <div class="num">
+                                        <button>-</button><input type="number" value="1"><button>+</button>
+                                    </div>
+                                </td>
+                                <td>￥66.00</td>
+                                <td>删除</td>
+                            </tr>
+              </table>
+              <div class="balance">
+                  <ul>
+                      <li><input type="checkbox">全选</li>
+                      <li>全部删除</li>
+                      <li>加入收藏夹</li>
+                    <div class="right">
+                      <li class="goodsNum">已选择<span>1</span>件商品</li>
+                      <li class="price">合计<em>￥</em><span>66.00</span></li>
+                          <li><a class="pay" href="pay.html"><button>结算</button> </a></li>
+                      
+                              
+                    </div>
+                  </ul>
+              </div>
+          </div>
         </div>
   
   
@@ -233,15 +274,5 @@
 </body>
 <script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
 <script src="../js/index.js"></script>
-<script>
 
-    $(".payuse input[type=radio]").click(function(){
-        // console.log(inputindex)
-        if($(this).prop("checked")){
-            $(this).closest("div").addClass("checked");
-           
-        }
-
-    })
-</script>
 </html>

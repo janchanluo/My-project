@@ -59,6 +59,7 @@ a {
   background-color: #101113;
   position: absolute;
   margin-top: 30px;
+  z-index: -1;
 }
 .content {
   width: 1200px;

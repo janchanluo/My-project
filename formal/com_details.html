@@ -23,12 +23,12 @@
                 </p>
             </div>
             <div class="right">
-                <ul>
-                    <li>用户中心</li>
-                    <li>我的足迹</li>
-                    <li>联系客服</li>
-                    <li>帮助中心</li>
-                </ul>
+                    <ul>
+                            <a href="user.html"><li>用户中心</li></a>
+                           <a href=""><li>我的足迹</li></a> 
+                           <a href=""><li>联系客服</li></a> 
+                           <a href=""><li>帮助中心</li></a> 
+                        </ul>
             </div>
         </div>
     </div>
@@ -59,12 +59,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="shoppingcar clearfix">
-                    <p class="carimg"></p>
-                    <span>6</span>
-                    <p>购物车</p>
-                </div>
-
+                <a class="shop_cart" href="shop_cart.html"> <div class="shoppingcar clearfix">
+                        <p class="carimg"></p>
+                        <span>6</span>
+                        <p>购物车</p>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -225,7 +225,7 @@
                                             <p>1号 680ML 2支装</p>
                                         </div>
                         </li>
-                        <li><a href="#"><img src="../images/goodsconnectpic5.png" alt=""></a>
+                        <li><a href="#"><img src="../images/goodsconnectpic5.png" width="290" alt=""></a>
                             <div>
                                     <p>德国Spiegelau诗杯客乐进口水晶玻璃红酒杯 
                                             高脚杯  葡萄酒杯酒具套装结婚礼物</p>
@@ -237,11 +237,13 @@
             <div class="comment">
                 <div class="comment-title clearfix">
                     <ul>
-                        <li>产品详情</li>
-                        <li>产品数据</li>
-                        <li>客户评论<span>（666）</span><strong></strong></li>
+                        <li class="details">产品详情<strong></strong></li>
+                        <li class="">产品数据<strong></strong></li>
+                        <li class="current  customer_comments">客户评论<span>（666）</span><strong class="hover_bottom"></strong></li>
                     </ul>
                 </div>
+                <div class="comment_all">
+
                 <div class="praise clearfix">
                     <div class="left">
                         <p class="good">好评度</p>
@@ -470,6 +472,53 @@
             
 
                 </div>
+          </div>
+          <div class="productInfo">
+          <div class="descripttion clearfix">
+                <div class="left">
+                    <p>产品参数></p>
+                    <dl>
+                        <dt>品牌：</dt><dd>莱美斯</dd>
+                        <dt>规格：</dt><dd>340ML-900ML</dd>
+                        <dt>型号：</dt><dd>德国进口新型款</dd>
+                        <dt>产地：</dt><dd>德国</dd>
+                        <dt>材质：</dt><dd>水晶玻璃</dd>
+                        <dt>总销量：</dt><dd>8888件</dd>
+                    </dl>
+                </div>
+                <div class="right">
+                    <img src="../images/pro_details_pic10.png" alt="">
+                </div>
+            </div>
+                <div class="goodsShow">
+                    <div class="title">
+                           <div class="border">
+                               <div class="center">
+                               <strong class="left"></strong>    <strong class="right"></strong>
+                               <span>产品展示</span>
+                               </div>
+                            </div> 
+                    </div>
+                    <div class="goodsList">
+                        <ul>
+                            <li class="goodsList_li"><img src="../images/pro_details_pic02.png" alt=""></li>
+                            <li><img src="../images/pro_details_pic03.png" alt=""></li>
+                        </ul>
+                        <ul class="litter clearfix">
+                                <li><img src="../images/pro_details_pic04.png" alt=""></li>
+                                <li><img src="../images/pro_details_pic05.png" alt=""></li>
+                                <li><img src="../images/pro_details_pic06.png" alt=""></li>
+                            </ul>
+                            <ul>
+                                    <li><img src="../images/pro_details_pic07.png" alt=""></li>
+                                </ul>
+                                <ul>
+                                        <li><img src="../images/pro_details_pic08.png" alt=""></li>
+                                    </ul>
+                    </div>
+                </div>
+            </div>
+          
             </div>
         </section>
     </div>
@@ -592,6 +641,21 @@
 <script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
 <script src="../js/index.js"></script>
 <script>
+    $(".comment-title li").click(function() {
+             $(this).addClass("current").siblings().removeClass("current");
+             $(".comment-title li strong").not('hover_bottom').removeClass()
+             $(this).children("strong").addClass("hover_bottom");
+             
+    })
+    $(".details").click(function() {
+        $(".comment_all").hide();
+        $(".productInfo").show();
+    })
+    $(".customer_comments").click(function() {
+        $(".productInfo").hide();
+        $(".comment_all").show();
+    })
 </script>
+      
 
 </html>
