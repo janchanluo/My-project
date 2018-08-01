@@ -119,12 +119,12 @@
             <p class="borderbottom"></p>
             <div class="paybank">
             <ul class="left">
-                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>中国农业银行</strong></li>
-                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>中国银行</strong></li>
-                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>邮政储蓄银行</strong></li>
+                <li><div class="checkbox_choose"><input type="radio" name="bank" id=""></div><span></span><strong>中国农业银行</strong></li>
+                <li><div class="checkbox_choose"><input type="radio" name="bank" id=""></div><span></span><strong>中国银行</strong></li>
+                <li><div class="checkbox_choose"><input type="radio" name="bank" id=""></div><span></span><strong>邮政储蓄银行</strong></li>
             </ul>
             <ul class="right">
-                <li><div><input type="radio" name="bank" id=""></div><span></span><strong>中国工商银行</strong></li>
+                <li><div class="checkbox_choose"><input type="radio" name="bank" id=""></div><span></span><strong>中国工商银行</strong></li>
                 <li><div><input type="radio" name="bank" id=""></div><span></span><strong>中国建设银行</strong></li>
                 <li><div><input type="radio" name="bank" id=""></div><span></span><strong>中国民生银行</strong></li>
             </ul>
@@ -149,7 +149,7 @@
         <div class="surepay">
                 <p>支付金额：<span>￥132.00</span></p>
                 <p><span></span>您在安全的环境中，请放心使用！</p>
-                <div>
+                <div class="pay_password">
                     <input maxlength="1" minlength="1" type="password">
                     <input maxlength="1" minlength="1" type="password">
                     <input maxlength="1" minlength="1"type="password">
@@ -234,14 +234,42 @@
 <script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
 <script src="../js/index.js"></script>
 <script>
+    var inputNum=null;  /* 当前选择的交易密码输入框 */
+    $(".payuse input").click(function(){
+        console.log($(".payuse input").length)
+        for(var i=0;i<$(".payuse input").length;i++){
+            if( $(".payuse input").eq(i).prop("checked")){
+            $(this).closest("div").prop("class","checked");
+        }else{
+            $(".payuse input").eq(i).closest("div").prop("class","");
+        }
+        }
+  
+    })
+          $('.pay_password input').keydown(function (e) {  
+            code=e.keyCode;
+    if((code>57 || code<48) && (code>105 || code<96) && code!=8 && code!=116 && code!=13){
+        return false;
+    }
+ })
+ for(var i=0;i< $('.pay_password input').length;i++){
+    $('.pay_password input').eq(i).keyup(function (e) {  
+              if($(this).val()){
+                inputNum =  $(this).index()+1;
+                $('.pay_password input').eq(inputNum).focus();
+              }
+              if(e.keyCode==8){
+                inputNum =  $(this).index()-1;
+                if(inputNum<0){
+                    inputNum=0;
+                   }
+                //    console.log(inputNum)
+                $('.pay_password input').eq(inputNum).focus();
+              }
+    })
 
-    $(".payuse input[type=radio]").click(function(){
-        // console.log(inputindex)
-        if($(this).prop("checked")){
-            $(this).closest("div").addClass("checked");
-           
         }
 
-    })
+
 </script>
 </html>

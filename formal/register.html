@@ -58,9 +58,9 @@
                            <li><strong>手机号：</strong><input name="phonenumber" type="text" placeholder="请输入您的手机号"></li>
                            <div class="code clearfix">
                            <li><strong>验证码：</strong><input name="code" type="text" placeholder="请输入验证码"></li>
-                           <div class="codeimg">123123</div>
+                           <div id="idcode"></div>
                         </div>
-                           <li><input type="checkbox" name="checkbox" id=""><span>阅读并同意《尚为商城用户注册协议》《隐私政策》</span></li>
+                           <li><div class="checkbox"><span id="choose"></span><input type="checkbox" name="checkbox" id=""><span>阅读并同意《尚为商城用户注册协议》《隐私政策》</span></div></li>
                         </ul>
                  <input type="submit" name="submit" value="立即注册">
                    </form>
@@ -134,7 +134,21 @@
         </footer>
 </body>
 <script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
+<script src="../js/jquery.idcode.js"></script>
 <script>
-        
-    </script>
+    $.idcode.setCode();
+    
+    $("#btns").click(function (){
+        var IsBy = $.idcode.validateCode(); 
+        alert(IsBy);
+        console.log(IsBy);
+    });
+    $(".checkbox input").click(function () {
+        if($(this).attr("checked")){
+            $("#choose").prop("class","shop_cart_choose");
+        }else{
+            $("#choose").prop("class","");
+        }
+      })
+</script>
 </html>

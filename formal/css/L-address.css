@@ -6,6 +6,7 @@ html {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* //消除边距 */
 header,
 footer,
 nav,
@@ -27,9 +28,11 @@ ul,
 ol {
   list-style: none;
 }
+/* //标签小圆点 */
 a {
   text-decoration: none;
 }
+/* //a标签下划线清除 */
 .clearfix:after {
   content: ".";
   clear: both;
@@ -41,15 +44,20 @@ a {
 .clearfix {
   zoom: 1;
 }
+/* //伪类清除浮动兼容ie 6，7 */
 .auto {
   margin: 0 auto;
 }
+/* //元素水平居中 */
 .fl {
   float: left;
 }
+/* //左浮动 */
 .fr {
   float: right;
 }
+/* //右浮动 */
+/* //边框 */
 .txtcenteralign {
   text-align: center;
 }
@@ -94,7 +102,7 @@ a {
 .content .sidebar ul li a {
   color: #2c2c2c;
 }
-.content .sidebar ul li.current a {
+.content .sidebar ul .current a {
   color: #ff0000;
 }
 .content .main {
@@ -149,7 +157,7 @@ a {
   bottom: 0;
   font-size: 12px;
 }
-.content .main .address-list table td p.default {
+.content .main .address-list table td .default {
   color: #ff0000;
 }
 .content .main .address-list table tr > td:first-child {
@@ -162,9 +170,9 @@ a {
   text-align: center;
   margin-top: 90px;
 }
-.content .main .page a.previous,
-.content .main .page a.nextpage,
-.content .main .page a.lastpage {
+.content .main .page .previous,
+.content .main .page .nextpage,
+.content .main .page .lastpage {
   background-color: #080808;
   padding: 5px 10px;
   color: #fff;
@@ -177,7 +185,7 @@ a {
   padding: 5px 10px;
   color: #000;
 }
-.content .main .page input.choosepage {
+.content .main .page .choosepage {
   border: 1px solid #4f4d4d;
   text-align: center;
   vertical-align: middle;

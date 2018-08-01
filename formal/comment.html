@@ -203,26 +203,26 @@
                     <p class="title">我的评价:</p>
                     <form>  
                     <div class="comment">
-                        <p>宝贝与描述相符
-                            <span class="starred"></span>
-                            <span class="starred"></span>
-                            <span class="starred"></span>
-                            <span class="starred"></span>
-                            <span class="starred"></span>
+                        <p class="describtion">宝贝与描述相符
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </p>
-                        <p>卖家的服务态度
-                            <span class="stargrey"></span>
-                            <span class="stargrey"></span>
-                            <span class="stargrey"></span>
-                            <span class="stargrey"></span>
-                            <span class="stargrey"></span>
+                        <p class="attitude">卖家的服务态度
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
                         </p>
-                        <p>物流服务的质量
-                            <span class="stargrey"></span>
-                            <span class="stargrey"></span>
-                            <span class="stargrey"></span>
-                            <span class="stargrey"></span>
-                            <span class="stargrey"></span>
+                        <p class="logistics">物流服务的质量
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
                         </p>
                     </div>
                     <div class="textarea">
@@ -362,16 +362,55 @@
     </footer>
 </body>
 <script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
-<script src="../js/index.js"></script>
 <script>
+    $(document).ready(function () { 
+        var num=null;/* 当前点击的span的下标 */
+        var nub=0;/* 当前点击的p的下标 */
+        var p=$(".comment").find("p");
+        var span1= $(".describtion").find("span");
+        var span2= $(".attitude").find("span");
+        var span3= $(".logistics").find("span");
+  function span(obj){
+            obj.eq(i).hover(function () { 
+        for(var j=0;j<=$(this).index();j++){
+            obj.eq(j).addClass("starred")
+        }
+  },function () { 
+    for(var j=0;j<=$(this).index();j++){
+        obj.eq(j).removeClass("starred")
+        } 
+        if(num!=null){
+            for(var i=0;i<=num;i++){
+             obj.eq(i).addClass("starred");
+        }
+         }
+         num=null;
+    
+   })/* 星星闪闪 */
+   obj.eq(i).click(function () {
+    nub=$(this).parent().index();
+    // num.pop();
+    // num.push($(this).index()) ;
+    num=$(this).index();
+    var nowSpan=p.eq(nub).children()
+     })
+        }
+  for(var i=0;i<span1.length;i++){
+    span(span1);
+    span(span2);
+    span(span3);
+         }
+
         $(".file div").click(function(){
         if(!$(this).attr("class")){
-            $(this).addClass("checked");
+            $(this).addClass("checked").siblings().removeClass("checked");
         }
         else{
             $(this).removeClass("checked");
         }
     })
+     })
+
 </script>
 
 </html>

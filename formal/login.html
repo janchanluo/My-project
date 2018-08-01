@@ -50,7 +50,7 @@
                                 <li><strong>密码</strong><input type="text" name="password" placeholder="请输入密码"></li>
                                 <div class="code clearfix">
                                 <li><strong>验证码</strong><input name="code" type="text" placeholder="请输入验证码"></li>
-                                <div class="codeimg">1233</div>
+                                <div id="idcode"></div>
                              </div>
                              <li class="message clearfix">
                                  <p><a href="register.html">免费注册</a></p>
@@ -130,7 +130,14 @@
         </footer>
 </body>
 <script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
+<script src="../js/jquery.idcode.js"></script>
 <script>
-        
-    </script>
+    $.idcode.setCode();
+    
+    $("#btns").click(function (){
+        var IsBy = $.idcode.validateCode(); 
+        alert(IsBy);
+        console.log(IsBy);
+    });
+</script>
 </html>

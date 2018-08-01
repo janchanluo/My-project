@@ -6,6 +6,7 @@ html {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* //消除边距 */
 header,
 footer,
 nav,
@@ -27,9 +28,11 @@ ul,
 ol {
   list-style: none;
 }
+/* //标签小圆点 */
 a {
   text-decoration: none;
 }
+/* //a标签下划线清除 */
 .clearfix:after {
   content: ".";
   clear: both;
@@ -41,15 +44,20 @@ a {
 .clearfix {
   zoom: 1;
 }
+/* //伪类清除浮动兼容ie 6，7 */
 .auto {
   margin: 0 auto;
 }
+/* //元素水平居中 */
 .fl {
   float: left;
 }
+/* //左浮动 */
 .fr {
   float: right;
 }
+/* //右浮动 */
+/* //边框 */
 .txtcenteralign {
   text-align: center;
 }
@@ -203,4 +211,36 @@ header .header-top .logo p {
   height: 40px;
   float: right;
   margin-top: 22px;
+}
+.content .login .form form .code #idcode {
+  padding-top: 30px;
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.content .login .form form .code .ehong-idcode-val {
+  position: relative;
+  padding: 1px 4px 1px 4px;
+  top: 0px;
+  *top: -3px;
+  letter-spacing: 4px;
+  display: inline;
+  cursor: pointer;
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: bold;
+  background: #ccc;
+  padding: 5px;
+}
+.content .login .form form .code .ehong-code-val-tip {
+  font-size: 14px;
+  color: #281aec;
+  top: 0px;
+  *top: -3px;
+  position: relative;
+  margin: 0px 0px 0px 4px;
+  cursor: pointer;
 }

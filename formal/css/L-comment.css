@@ -6,6 +6,7 @@ html {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* //消除边距 */
 header,
 footer,
 nav,
@@ -27,9 +28,11 @@ ul,
 ol {
   list-style: none;
 }
+/* //标签小圆点 */
 a {
   text-decoration: none;
 }
+/* //a标签下划线清除 */
 .clearfix:after {
   content: ".";
   clear: both;
@@ -41,15 +44,20 @@ a {
 .clearfix {
   zoom: 1;
 }
+/* //伪类清除浮动兼容ie 6，7 */
 .auto {
   margin: 0 auto;
 }
+/* //元素水平居中 */
 .fl {
   float: left;
 }
+/* //左浮动 */
 .fr {
   float: right;
 }
+/* //右浮动 */
+/* //边框 */
 .txtcenteralign {
   text-align: center;
 }
@@ -142,19 +150,20 @@ a {
 .content .evaluate .myevaluate .comment p {
   margin-bottom: 25px;
 }
-.content .evaluate .myevaluate .comment span.starred {
-  display: inline-block;
-  background: url(../images/starred.png) no-repeat;
-  width: 23px ;
-  height: 21px;
-  vertical-align: top;
-  padding-left: 5px;
-}
-.content .evaluate .myevaluate .comment span.stargrey {
+.content .evaluate .myevaluate .comment span {
   display: inline-block;
   background: url(../images/stargrey.png) no-repeat;
   width: 23px ;
-  height: 21px;
+  height: 22px;
+  vertical-align: top;
+  padding-left: 5px;
+  margin-left: 5px;
+}
+.content .evaluate .myevaluate .comment .starred {
+  display: inline-block;
+  background: url(../images/starred.png) no-repeat;
+  width: 23px ;
+  height: 22px;
   vertical-align: top;
   padding-left: 5px;
 }
@@ -201,7 +210,9 @@ a {
   display: inline-block;
 }
 .content .evaluate .myevaluate .file > div input {
-  display: none;
+  opacity: 0;
+  width: 22px;
+  height: 22px;
 }
 .content .evaluate .myevaluate .file .checked {
   background: url("../images/checkedradius.png") no-repeat;

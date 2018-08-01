@@ -112,11 +112,18 @@
         <div class="goodsmessage clearfix">
             <div class="left">
                 <div class="goodsshow">
-                    <img src="../images/com_detailspic1.png" alt="">
-                    <ul>
-                        <span class="changeleft"></span>
+                    <div class="goodsshow_artwork_show">
+
+                    </div>
+                    <div class="goodsshow_artwork" _src="../images/com_detailspic1.png">
+                            <img src="../images/com_detailspic1.png" alt="">
+                    </div>
+                    <div class="goodsshow_thumbnailList">
+                  <span class="changeleft"></span>
+                    <ul class="goodsshow_thumbnail">
+                
                         <li>
-                            <img src="../images/com_detailssmall1.png" alt="">
+                            <img src="../images/com_detailspic1.png" alt="">
                         </li>
                         <li>
                             <img src="../images/com_detailssmall2.png" alt="">
@@ -127,10 +134,12 @@
                         <li>
                             <img src="../images/com_detailssmall4.png" alt="">
                         </li>
-
-                        <span class="changeright"></span>
+                        <li>
+                                <img src="../images/com_detailssmall4.png" alt="">
+                            </li>
                     </ul>
-
+                    <span class="changeright"></span>
+                </div>
                 </div>
             </div>
             <div class="right">
@@ -172,10 +181,10 @@
                     <dl>
                         <dt>选购数量</dt>
                         <dd class="choosenum">
-                              <strong>-</strong>
-                             <strong>1</strong>
-                             <strong>+</strong>
-                             <span>库存<em>1666</em>件</span>
+                              <button class="reduce">-</button>
+                             <input class="num" value="1" type="text">
+                             <button class="add">+</button>
+                             <span class="allGoods">库存<em>1666</em>件</span>
                              <span>月销量<em>100</em>件</span>
                              <span>累计评论<em>300</em>条</span>
                         </dd>
@@ -639,23 +648,5 @@
     </footer>
 </body>
 <script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
-<script src="../js/index.js"></script>
-<script>
-    $(".comment-title li").click(function() {
-             $(this).addClass("current").siblings().removeClass("current");
-             $(".comment-title li strong").not('hover_bottom').removeClass()
-             $(this).children("strong").addClass("hover_bottom");
-             
-    })
-    $(".details").click(function() {
-        $(".comment_all").hide();
-        $(".productInfo").show();
-    })
-    $(".customer_comments").click(function() {
-        $(".productInfo").hide();
-        $(".comment_all").show();
-    })
-</script>
-      
-
+<script src="../js/com_details.js"></script>
 </html>
