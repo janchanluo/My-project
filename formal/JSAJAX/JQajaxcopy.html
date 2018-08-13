@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Demo</title>
+<style>
+body, input, select, button, h1 {
+	font-size: 20px;
+	line-height:1.7;
+}
+#searchResult{
+	color: #fff;
+    background: #666;
+    width: auto;
+}
+</style>	
+</head>
+
+<body>
+
+<h1>员工查询</h1>
+
+<label>请输入员工编号：</label>
+<input type="text" id="keyword" />
+<button id="search">查询</button>
+<p id="searchResult"></p>
+
+<h1>员工新建</h1>
+<label>请输入员工姓名：</label>
+<input type="text" id="staffName" /><br>
+<label>请输入员工编号：</label>
+<input type="text" id="staffNumber" /><br>
+<label>请选择员工性别：</label>
+<select id="staffSex">
+<option>女</option>
+<option>男</option>
+</select><br>
+<label>请输入员工职位：</label>
+<input type="text" id="staffJob" /><br>
+<button id="save">保存</button>
+<p id="createResult"></p>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script>
+    $("#search").click(function () {
+        $.ajax({
+            type:"GET",
+            url:"serverjson2.php",
+            data:"number="+$("#keyword").val(),
+            dataType:"json",
+            success:function(data,success,status){
+                if(data.success){
+                    $("#searchResult").html(data.msg);
+                }else{
+                    $("#searchResult").html("发生错误"+data.msg);
+                }
+            },
+            error:function (jqstatus) {
+                alert("出错啦！"+jqstatus.status)
+              }
+        })
+      })
+      $("#save").click(function () {
+          $.ajax({
+            type:"POST",
+            url:"serverjson2.php",
+            data:{
+                name: $("#staffName").val(),
+                number: $("#staffNumber").val(),
+                job: $("#staffJob").val(),
+                sex: $("#staffSex").val()  
+            },
+            dataType:"json",
+            success:function(data){
+                if(data.success){
+                    $("#createResult").html(data.msg);
+                }else{
+                    $("#createResult").html("发生错误"+data.msg);
+                }
+            },
+            error:function (jqstatus) {
+                alert("出错啦！"+jqstatus.status)
+              }
+          })
+         
+
+        })
+</script>
+</html>

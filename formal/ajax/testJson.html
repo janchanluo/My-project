@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+      }
+      table{
+          text-align: center;
+          border-collapse: separate;
+                 border-spacing:0 30px; 
+          
+      }
+    </style>
+</head>
+
+<body>
+<div class="table">
+    <table>
+        <tr>
+            <th>序号</th>
+            <th>名称</th>
+            <th>开始时间</th>
+            <th>设备</th>
+        </tr>
+    </table>
+</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script>
+    var sum=0;
+    $.ajax({
+        type:"GET",
+        url:"test.json",
+        dataType:"json",
+        success:function(data){
+            for(var i in data.data){
+                ++sum;
+                console.log(data.data[i])
+               var html= $("<tr>").html('<td>'+sum+'</td>'+ '<td>'+data.data[i].name+'</td>'+'<td>'+data.data[i].startTime+'<td>'+data.data[i].device+'</td>')
+               $("table").append( html);
+               
+            }
+      
+        }
+    })
+</script>
+</html>
