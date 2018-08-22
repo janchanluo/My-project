@@ -75,21 +75,24 @@ a {
   color: #fff;
   margin: 0 auto;
 }
-#fixdheader .fixdheader-content .left {
+#fixdheader .fixdheader-content .fixdheader_left {
   float: left;
 }
-#fixdheader .fixdheader-content .left p a {
+#fixdheader .fixdheader-content .fixdheader_left p a {
   color: #00b7fb;
 }
-#fixdheader .fixdheader-content .right {
+#fixdheader .fixdheader-content .fixdheader_right {
   float: right;
 }
-#fixdheader .fixdheader-content .right ul li {
+#fixdheader .fixdheader-content .fixdheader_right ul li {
   float: left;
-  padding: 0 15px;
+  padding: 0 10px;
   cursor: pointer;
 }
-#fixdheader .fixdheader-content .right ul li:last-child {
+#fixdheader .fixdheader-content .fixdheader_right ul li a {
+  color: #fff;
+}
+#fixdheader .fixdheader-content .fixdheader_right ul li:last-child {
   padding-right: 0;
 }
 header {
@@ -104,11 +107,11 @@ header .header-top .logo {
   float: left;
 }
 header .header-top .logo .logoimg {
-  border-right: 1px solid #666;
   padding-right: 20px;
   float: left;
 }
-header .header-top .logo p {
+header .header-top .logo .logo_txt {
+  display: none;
   position: relative;
   left: 20px;
   font-size: 12px;
@@ -143,14 +146,14 @@ header .header-top .logo p {
   margin-top: 26px;
   text-align: center;
 }
-.content .login .form form ul {
+.content .login .form form {
   position: relative;
 }
-.content .login .form form ul > .message {
+.content .login .form form .message {
   position: absolute;
   right: 35px;
 }
-.content .login .form form ul > li > p {
+.content .login .form form .message p {
   float: left;
   padding-left: 10px;
   font-size: 18px;
@@ -158,14 +161,22 @@ header .header-top .logo p {
   margin-left: 10px;
   border-left: 1px solid #b40303;
 }
-.content .login .form form ul > li > p:first-child {
-  border: none;
-}
-.content .login .form form ul > li > p:first-child a {
+.content .login .form form .message p a {
   color: #b40303;
 }
-.content .login .form form ul > li > p:first-child a:hover {
+.content .login .form form .message p a:hover {
   color: #2c2c2c;
+}
+.content .login .form form .message p:first-child {
+  border: none;
+}
+.content .login .form form .message_user,
+.content .login .form form .message_pw {
+  font-size: 14px;
+  color: #b40303;
+  text-align: left;
+  margin-left: 155px;
+  opacity: 0;
 }
 .content .login .form form strong {
   font-size: 24px;
@@ -174,10 +185,7 @@ header .header-top .logo p {
   position: relative;
   left: 40px;
   float: left;
-  height: 40px;
-  margin: 22px 0;
-  line-height: 40px;
-  display: inline-block;
+  line-height: 76px;
 }
 .content .login .form form input {
   width: 323px;
@@ -185,7 +193,7 @@ header .header-top .logo p {
   padding-left: 15px;
   border: 1px solid #101113;
   background-color: rgba(232, 173, 175, 0);
-  margin: 17px 0;
+  margin: 12px 0;
 }
 .content .login .form form input[name=code] {
   width: 137px;

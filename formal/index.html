@@ -8,33 +8,27 @@
     <link rel="stylesheet" type="text/css" href="../css/L-index.css">
     <link rel="stylesheet" type="" href="../css/L-header.css">
     <link rel="stylesheet" type="" href="../css/L-footer.css">
-    <link rel="stylesheet" type="" href="../css/bannerstyle.css">
+    <link rel="stylesheet" type="" href="../css/swiper.css">
     <!-- <script src="https://cdn.bootcss.com/less.js/2.7.3/less.min.js"></script> -->
-    <title>Document</title>
+    <title>尚为商城</title>
 </head>
 
 <body>
     <div id="fixdheader">
         <div class="fixdheader-content">
-            <div class="left">
+            <div class="fixdheader_left">
                 <p>尚为商城欢迎您，
-                    <a href="login.html">登录/注册</a>
+                    <a href="login.html">登录</a>/<a href="register.html">注册</a>
                 </p>
             </div>
-            <div class="right">
+            <div class="fixdheader_right">
                 <ul>
-                    <a href="user.html">
-                        <li>用户中心</li>
-                    </a>
-                    <a href="">
-                        <li>我的足迹</li>
-                    </a>
-                    <a href="">
-                        <li>联系客服</li>
-                    </a>
-                    <a href="">
-                        <li>帮助中心</li>
-                    </a>
+                   
+                        <li><a href="user.html">用户中心 </a></li>
+                        <li> <a href="#">我的足迹 </a></li>
+                        <li><a href="#">联系客服</a></li>
+                        <li><a href="#">帮助中心</a></li>
+           
                 </ul>
             </div>
         </div>
@@ -43,9 +37,9 @@
         <section class="header-top clearfix">
             <div class="logo">
                 <a class="logoimg" href="index.html">
-                    <img src="../images/logo.png" alt="">
+                    <img src="../images/index_logo.png" alt="">
                 </a>
-                <p>
+                <p class="logo_txt">
                     <br> 我们只想伴你走过一段温柔的时光，
                     <br> 不疏不离，不舍不弃。
                     <br> 小小酒杯载不动山高水长，殷殷里飘起缕缕牵肠的欲说还休。
@@ -57,12 +51,12 @@
                     <input class="search-button" type="button" value="搜索" name="search">
                     <div class="search-keyword">
                         <ul>
-                            <li>红酒杯</li>
-                            <li>白酒杯</li>
-                            <li>啤酒杯</li>
-                            <li> 酒壶 </li>
-                            <li>开酒器</li>
-                            <li>酒具套装</li>
+                            <li><a href="shop_list.html">红酒杯</a></li>
+                            <li><a href="shop_list.html">白酒杯  </a></li>
+                            <li><a href="shop_list.html">啤酒杯  </a></li>
+                            <li><a href="shop_list.html">酒壶    </a> </li>
+                            <li><a href="shop_list.html">开酒器  </a> </li>
+                            <li><a href="shop_list.html">酒具套装</a> </li>
                         </ul>
                     </div>
                 </div>
@@ -75,55 +69,55 @@
                 </a>
             </div>
         </section>
-        <section class="header-bottom">
-            <ul class="one">
-                <li class="shop-listli"><a  class="shop-list" href="shop_list.html">全部商品分类</a>
+        <section class="nav">
+            <div class="firnav">
+                <div class="shop-listli title-ulhover"><a  class="shop-list" href="shop_list.html">全部商品分类</a>
                     <span class="trigonBottom"></span>
                     <ul class="title-ul">
                         <li>
-                            <a href="#">红酒杯</a>
+                            <a href="shop_list.html">红酒杯</a>
                         </li>
                         <li>
-                            <a href="#">白酒杯</a>
+                            <a href="shop_list.html">白酒杯</a>
                         </li>
                         <li>
-                            <a href="#">啤酒杯</a>
+                            <a href="shop_list.html">啤酒杯</a>
                         </li>
                         <li>
-                            <a href="#"> 酒壶 </a>
+                            <a href="shop_list.html"> 酒壶 </a>
                         </li>
                         <li>
-                            <a href="#">开酒器</a>
+                            <a href="shop_list.html">开酒器</a>
                         </li>
                         <li>
-                            <a href="#" class="special">酒具套装</a>
+                            <a href="shop_list.html" class="special">酒具套装</a>
                         </li>
                     </ul>
-                </li>
-            </ul>
-            <ul class="two">
+                </div>
+            </div>
+            <ul class="subnav">
                 <li>
-                    <a href="#">首页</a>
+                    <a href="index.html" style="color: #ff0000">首页</a>
+                    <span class="itrigonTop"></span>
+                </li>
+                <li>
+                    <a href="shop_list.html">玻璃材质</a>
                     <span></span>
                 </li>
                 <li>
-                    <a href="#">玻璃材质</a>
+                    <a href="shop_list.html">金属材质</a>
                     <span></span>
                 </li>
                 <li>
-                    <a href="#">金属材质</a>
+                    <a href="shop_list.html">陶瓷材质</a>
                     <span></span>
                 </li>
                 <li>
-                    <a href="#">陶瓷材质</a>
+                    <a href="shop_list.html">酒具套装</a>
                     <span></span>
                 </li>
                 <li>
-                    <a href="#">酒具套装</a>
-                    <span></span>
-                </li>
-                <li>
-                    <a href="#">个性定制</a>
+                    <a href="shop_list.html">个性定制</a>
                     <span></span>
                 </li>
             </ul>
@@ -132,86 +126,73 @@
 
     <div class="banner" class="clearfix">
 
-        <div class="flexslider">
-
-            <ul class="slides">
-
-                <li>
-                    <img src="../images/banner1.jpg">
-                </li>
-                <li>
-                    <img src="../images/banner2.jpg">
-                </li>
-                <li>
-                    <img src="../images/banner3.jpg">
-                </li>
-            </ul>
-
+          <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> <img src="../images/banner1.jpg" title="鼠标拖动切换图片"></div>
+            <div class="swiper-slide">  <img src="../images/banner2.jpg" title="鼠标拖动切换图片"></div>
+            <div class="swiper-slide">  <img src="../images/banner3.jpg" title="鼠标拖动切换图片"></div>
         </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
 
     </div>
+
     <div id="content">
         <div class="container">
             <div class="top">
                 <div class="topimg">
-                    <span>最新商品</span>
+                    <h3>最新商品</h3>
                 </div>
-                <p class="bord1"></p>
-                <p class="bord2"></p>
             </div>
             <section class="new clearfix">
-                <ul>
-                    <div class="left">
+                <ul class="new_left">
                         <li>
-                            <a href="#">
+                            <a href="com_details.html">
                                 <img src="../images/onepic1.png" alt="">
                             </a>
                         </li>
-                        <div class="left-bottom">
-                            <li>
-                                <a href="#">
+                        <li>
+                            <a href="com_details.html">
+                                <img src="../images/onepic2.png" alt="">
+                            </a>
+                        </li>  
+                           <li>
+                                <a href="com_details.html">
                                     <img src="../images/onepic3.png" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="com_details.html">
                                     <img src="../images/onepic4.png" alt="">
                                 </a>
-                            </li>
-                        </div>
-
-                    </div>
-
-                    <div class="right">
-                        <li>
-                            <a href="#">
-                                <img src="../images/onepic2.png" alt="">
-                            </a>
-                        </li>
-                    </div>
+                            </li>  
+                   
                 </ul>
             </section>
             <div class="more">
-                <div class="rectangle">MORE</div>
-                <div class="landscape"></div>
-                <div class="portrait"></div>
-
-            </div>
+                    <a href="shop_list.html" class="moreAfter">  <div class="rectangle">MORE</div></a>
+      
+               </div>
             <div class="advertis">
-                <img src="../images/bigpic1.png" alt="">
+               <a href="com_details.html"> <img src="../images/bigpic1.png" alt=""></a>
             </div>
             <div class="top">
                 <div class="topimg">
-                    <span>热门商品</span>
+                    <h3>热门商品</h3>
                 </div>
-                <p class="bord1"></p>
-                <p class="bord2"></p>
             </div>
             <div class="hot clearfix">
-                <ul>
-                    <div class="hot-first">
+                <ul class="hot_ul">
                         <li>
-                            <a href="#">
+                            <a href="com_details.html">
                                 <img src="../images/twopic1.png" alt="">
                                 <div class="bigsize">
                                     <p>高端红酒杯</p>
@@ -220,7 +201,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="com_details.html">
                                 <img src="../images/twopic2.png" alt="">
                                 <div>
                                     <p>高端红酒杯</p>
@@ -229,7 +210,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="com_details.html">
                                 <img src="../images/twopic3.png" alt="">
                                 <div>
                                     <p>高端红酒杯</p>
@@ -237,10 +218,8 @@
                                 </div>
                             </a>
                         </li>
-                    </div>
-                    <div class="hot-last">
                         <li>
-                            <a href="#">
+                            <a href="com_details.html">
                                 <img src="../images/twopic4.png" alt="">
                                 <div>
                                     <p>高端红酒杯</p>
@@ -249,7 +228,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="com_details.html">
                                 <img src="../images/twopic5.png" alt="">
                                 <div>
                                     <p>高端红酒杯</p>
@@ -258,7 +237,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="com_details.html">
                                 <img src="../images/twopic6.png" alt="">
                                 <div>
                                     <p>高端红酒杯</p>
@@ -266,77 +245,73 @@
                                 </div>
                             </a>
                         </li>
-                    </div>
                 </ul>
+    
             </div>
             <div class="more">
-                <div class="rectangle">MORE</div>
-                <div class="landscape"></div>
-                <div class="portrait"></div>
-            </div>
+                    <a href="shop_list.html" class="moreAfter">  <div class="rectangle">MORE</div></a>
+       
+               </div>
             <div class="top">
                 <div class="topimg">
-                    <span>推荐商品</span>
+                    <h3>推荐商品</h3>
                 </div>
-                <p class="bord1"></p>
-                <p class="bord2"></p>
             </div>
             <div class="selected clearfix">
-                <ul class="selected-first">
+                <ul>
                     <li>
-                        <a href="#">
+                        <a href="com_details.html">
                             <img src="../images/threepic1.png" alt="">
                         </a>
+                        <ul class="first-bottom">
+                            <li>
+                                <a href="com_details.html">
+                                    <img src="../images/threepic3.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="com_details.html">
+                                    <img src="../images/threepic4.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
                     </li>
-                    <div class="first-bottom">
-                        <li>
-                            <a href="#">
-                                <img src="../images/threepic3.png" alt="">
+                    <li>
+                            <a href="com_details.html">
+                                <img src="../images/threepic2.png" alt="">
                             </a>
+                            <ul class="second-bottom">
+    
+                                <li>
+                                    <a href="com_details.html">
+                                        <img src="../images/threepic5.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="com_details.html">
+                                        <img src="../images/threepic5.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">
-                                <img src="../images/threepic4.png" alt="">
-                            </a>
-                        </li>
-                    </div>
                 </ul>
                 <ul class="selected-second">
-                    <li>
-                        <a href="#">
-                            <img src="../images/threepic2.png" alt="">
-                        </a>
-                    </li>
-                    <div class="second-bottom">
-
-                        <li>
-                            <a href="#">
-                                <img src="../images/threepic5.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="../images/threepic6.png" alt="">
-                            </a>
-                        </li>
-                    </div>
+                   
+                  
                 </ul>
             </div>
-            <div class="more">
-                <div class="rectangle">MORE</div>
-                <div class="landscape"></div>
-                <div class="portrait"></div>
-
-            </div>
+                <div class="more">
+                     <a href="shop_list.html" class="moreAfter">  <div class="rectangle">MORE</div></a>
+      
+                </div>
+            </a>
             <div class="advertis">
-                <img src="../images/bigpic2.png" alt="">
+                <a href="confirm_order.html">   <img src="../images/bigpic2.png" alt=""></a>
             </div>
             <div class="top">
                 <div class="topimg">
-                    <span>热门商品</span>
+                    <h3>爆款推荐</h3>
                 </div>
-                <p class="bord1"></p>
-                <p class="bord2"></p>
             </div>
             <div class="explosion clearfix">
                 <div class="explosion-left">
@@ -351,7 +326,7 @@
                 </div>
                 <div class="explosion-right">
                     <div class="right-first">
-                        <a href="">
+                        <a href="com_details.html">
                             <img src="../images/fourpic2.png" width="431" alt="">
                             <div>
                                 <p>限时价：199元</p>
@@ -359,7 +334,7 @@
                         </a>
                     </div>
                     <div class="right-second">
-                        <a href="">
+                        <a href="com_details.html">
                             <img src="../images/fourpic3.png" alt="">
                             <div>
                                 <p>限时价：199元</p>
@@ -369,11 +344,9 @@
                 </div>
             </div>
             <div class="more">
-                <div class="rectangle">MORE</div>
-                <div class="landscape"></div>
-                <div class="portrait"></div>
-
-            </div>
+                    <a href="shop_list.html" class="moreAfter">  <div class="rectangle">MORE</div></a>
+             
+               </div>
         </div>
     </div>
     <footer>
@@ -381,19 +354,13 @@
             <div class="first-footer  clearfix">
                 <ul>
                     <li>
-                        <a href="#">
-                            <p>100%品牌保证</p>
-                        </a>
+                         <span></span>100%品牌保证
                     </li>
                     <li>
-                        <a href="#">
-                            <p>7天无理由退换</p>
-                        </a>
+                         <span></span>7天无理由退换
                     </li>
                     <li>
-                        <a href="#">
-                            <p>售后服务保障</p>
-                        </a>
+                        <span></span>售后服务保障
                     </li>
                 </ul>
 
@@ -492,22 +459,42 @@
     </footer>
 </body>
 <script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
 <script src="../js/index.js"></script>
+<script>
+var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    grabCursor:true,
+    effect : 'slide',
+    autoplay:true,//等同于以下设置
+    autoplay: {
+    delay: 3000,    
+    stopOnLastSlide: false,
+    disableOnInteraction: true,
+    },
 
-<script type="text/javascript">
-
-    $(document).ready(function () {
-
-        $('.flexslider').flexslider({
-
-            directionNav: true,
-
-            pauseOnAction: false
-
-        });
-
-    });
+    // 如果需要分页器
+    pagination: {
+  el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })       
+  mySwiper.el.onmouseover=function(){
+    mySwiper.autoplay.stop();
+  }
+  mySwiper.el.onmouseleave=function(){
+    mySwiper.autoplay.start();
+  }
 </script>
-
 </html>

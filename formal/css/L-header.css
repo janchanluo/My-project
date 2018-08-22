@@ -75,24 +75,24 @@ a {
   color: #fff;
   margin: 0 auto;
 }
-#fixdheader .fixdheader-content .left {
+#fixdheader .fixdheader-content .fixdheader_left {
   float: left;
 }
-#fixdheader .fixdheader-content .left p a {
+#fixdheader .fixdheader-content .fixdheader_left p a {
   color: #00b7fb;
 }
-#fixdheader .fixdheader-content .right {
+#fixdheader .fixdheader-content .fixdheader_right {
   float: right;
 }
-#fixdheader .fixdheader-content .right ul a {
-  color: #fff;
-}
-#fixdheader .fixdheader-content .right ul li {
+#fixdheader .fixdheader-content .fixdheader_right ul li {
   float: left;
   padding: 0 15px;
   cursor: pointer;
 }
-#fixdheader .fixdheader-content .right ul li:last-child {
+#fixdheader .fixdheader-content .fixdheader_right ul li a {
+  color: #fff;
+}
+#fixdheader .fixdheader-content .fixdheader_right ul li:last-child {
   padding-right: 0;
 }
 header {
@@ -107,11 +107,11 @@ header .header-top .logo {
   float: left;
 }
 header .header-top .logo .logoimg {
-  border-right: 1px solid #666;
   padding-right: 20px;
   float: left;
 }
-header .header-top .logo p {
+header .header-top .logo .logo_txt {
+  display: none;
   position: relative;
   left: 20px;
   font-size: 12px;
@@ -123,8 +123,9 @@ header .header-top .search {
   padding-top: 35px;
 }
 header .header-top .search .search-input {
+  width: 480px;
   position: relative;
-  left: -122px;
+  left: -50px;
   float: left;
 }
 header .header-top .search .search-input ul > li {
@@ -133,51 +134,54 @@ header .header-top .search .search-input ul > li {
   cursor: pointer;
   font-size: 14px;
 }
-header .header-top .search .search-input ul > li:hover {
+header .header-top .search .search-input ul > li a {
+  color: #000;
+}
+header .header-top .search .search-input ul > li a:hover {
   color: #ff0000;
 }
 header .header-top .search .search-input input[type=text] {
-  width: 355px;
+  width: 342px;
   height: 45px;
   border: 3px solid #101113;
   padding-left: 10px;
 }
 header .header-top .search .search-input input[type=button] {
-  margin-right: 35px;
   width: 122px;
   color: #fff;
   cursor: pointer;
   height: 51px;
   position: absolute;
   top: 0;
-  right: -122px;
+  right: 0px;
   background-color: #101113;
   border: none;
 }
-header .header-top .search a.shop_cart {
+header .header-top .search .shop_cart {
   color: #000;
 }
-header .header-top .search a.shop_cart .shoppingcar {
+header .header-top .search .shop_cart .shoppingcar {
   float: right;
   position: relative;
   padding-top: 25px;
-  line-height: 29px;
+  line-height: 30px;
 }
-header .header-top .search a.shop_cart .shoppingcar p {
+header .header-top .search .shop_cart .shoppingcar p {
   float: left;
   padding: 0 10px;
+  font-size: 18px;
 }
-header .header-top .search a.shop_cart .shoppingcar .carimg {
+header .header-top .search .shop_cart .shoppingcar .carimg {
   background: url(../images/shoppingcar.png) no-repeat;
   width: 32px;
   height: 29px;
 }
-header .header-top .search a.shop_cart .shoppingcar span {
+header .header-top .search .shop_cart .shoppingcar span {
   background: url(../images/redr.png) no-repeat;
   width: 18px;
   display: block;
   position: absolute;
-  top: 10px;
+  top: 18px;
   font-size: 12px;
   color: #fff;
   left: 37px;
@@ -185,23 +189,23 @@ header .header-top .search a.shop_cart .shoppingcar span {
   text-align: center;
   line-height: 18px;
 }
-header .header-bottom {
+header .nav {
   margin-top: 25px;
   height: 60px;
 }
-header .header-bottom ul li {
+header .nav ul li {
   float: left;
   height: 22px;
-  font-size: 20px;
 }
-header .header-bottom ul li a {
+header .nav ul li a {
   color: #2c2c2c;
+  font-size: 20px;
   padding: 0 30px;
 }
-header .header-bottom ul li a:hover {
+header .nav ul li a:hover {
   color: #ff0000;
 }
-header .header-bottom .trigonBottom {
+header .nav .trigonBottom {
   background: url(../images/trigonBottom.png) no-repeat;
   width: 22px;
   height: 14px;
@@ -210,49 +214,55 @@ header .header-bottom .trigonBottom {
   left: 152px;
   top: -14px;
 }
-header .header-bottom .trigonTop {
-  background: url(../images/trigonTop.png) no-repeat bottom;
+header .nav .trigonTop,
+header .nav .itrigonTop {
+  background: url(../images/trigonTop.png) no-repeat top;
   width: 22px;
   display: block;
   margin: 0 auto;
   height: 14px;
 }
-header .header-bottom .trigonTopnodisplay {
+header .nav .trigonTopnodisplay {
   background: url(../images/trigonTop.png) no-repeat;
   width: 22px;
   display: block;
   margin: 0 auto;
   height: 14px;
 }
-header .header-bottom .title-ulhover {
+header .nav .title-ulhover {
   background-color: #101113;
 }
-header .header-bottom ul.one li {
+header .nav .firnav .shop-listli {
+  float: left;
+  height: 22px;
+  font-size: 0;
   text-align: center;
   margin-top: -20px;
   padding: 20px 0;
   width: 180px;
 }
-header .header-bottom ul.one li a.shop-list {
-  margin-top: -20px;
+header .nav .firnav .shop-listli .shop-list {
   padding: 20px 30px;
   width: 180px;
   z-index: 2;
-}
-header .header-bottom ul.one li a.shop-list:hover {
+  line-height: 22px;
+  font-size: 20px;
   color: #fff;
 }
-header .header-bottom ul.one li .col {
+header .nav .firnav .shop-listli .shop-list:hover {
   color: #fff;
 }
-header .header-bottom ul.one li .title-ul {
+header .nav .firnav .shop-listli .col {
+  color: #fff;
+}
+header .nav .firnav .shop-listli .title-ul {
   position: absolute;
   display: none;
   text-align: center;
   z-index: 2;
-  margin-top: 2px;
+  margin-top: 5px;
 }
-header .header-bottom ul.one li .title-ul li {
+header .nav .firnav .shop-listli .title-ul li {
   padding: 20px 0;
   clear: both;
   width: 180px;
@@ -260,15 +270,18 @@ header .header-bottom ul.one li .title-ul li {
   margin: 1px 0;
   background-color: #e6e0e0;
 }
-header .header-bottom ul.one li .title-ul li:hover {
-  background-color: #3f3e3e;
+header .nav .firnav .shop-listli .title-ul li:hover {
+  background-color: #8f8888;
 }
-header .header-bottom ul.one li .title-ul li a {
+header .nav .firnav .shop-listli .title-ul li a {
   padding: 22px 60px;
 }
-header .header-bottom ul.one li .title-ul li a:hover {
+header .nav .firnav .shop-listli .title-ul li a:hover {
   color: #fff;
 }
-header .header-bottom ul.one li .title-ul li .special {
+header .nav .firnav .shop-listli .title-ul li .special {
   padding: 22px 50px;
+}
+header .nav .subnav {
+  margin-top: -5px;
 }

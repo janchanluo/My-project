@@ -121,6 +121,7 @@ a {
   border: none;
   font-size: 16px;
   margin-bottom: -30px;
+  cursor: pointer;
 }
 .content .main .address-list table {
   width: 917px;
@@ -145,17 +146,18 @@ a {
 }
 .content .main .address-list table td a {
   color: #ff0000;
-  padding: 0 5px 0 0;
-  border-right: 1px #ff0000 solid;
+  padding: 0 0 0 5px;
+  border-left: 1px #ff0000 solid;
 }
-.content .main .address-list table td a:last-child {
-  border-right: none;
+.content .main .address-list table td a:first-child {
+  border: none;
 }
 .content .main .address-list table td p {
   position: absolute;
   right: 0;
   bottom: 0;
   font-size: 12px;
+  cursor: pointer;
 }
 .content .main .address-list table td .default {
   color: #ff0000;
@@ -168,13 +170,14 @@ a {
 }
 .content .main .page {
   text-align: center;
-  margin-top: 90px;
+  margin-top: 85px;
 }
-.content .main .page .previous,
-.content .main .page .nextpage,
-.content .main .page .lastpage {
+.content .main .page a.previous,
+.content .main .page a.nextpage,
+.content .main .page a.lastpage {
   background-color: #080808;
   padding: 5px 10px;
+  margin: 0 10px;
   color: #fff;
 }
 .content .main .page .pagenum {
@@ -183,13 +186,23 @@ a {
 .content .main .page .pagenum a {
   background-color: #d9d6d6;
   padding: 5px 10px;
+  margin: 0 3px;
   color: #000;
 }
-.content .main .page .choosepage {
+.content .main .page .pagenum a:first-child {
+  color: #fff;
+  background-color: #000;
+}
+.content .main .page .pagenum a:hover {
+  color: #fff;
+  background-color: #000;
+}
+.content .main .page input.choosepage {
   border: 1px solid #4f4d4d;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
   width: 20px;
   height: 20px;
   display: inline-block;
+  margin: 0 5px;
 }

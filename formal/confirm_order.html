@@ -9,49 +9,53 @@
     <link rel="stylesheet" type="" href="../css/L-footer.css">
     <link rel="stylesheet" type="" href="../css/L-header.css">
     <!-- <script src="https://cdn.bootcss.com/less.js/2.7.3/less.min.js"></script> -->
-    <title>Document</title>
+    <title>商品购买</title>
 </head>
 
 <body>
-    <div id="fixdheader">
-        <div class="fixdheader-content">
-            <div class="left">
-                <p>尚为商城欢迎您，
-                    <a href="login.html">登录/注册</a>
-                </p>
-            </div>
-            <div class="right">
-                    <ul>
-                            <a href="user.html"><li>用户中心</li></a>
-                           <a href=""><li>我的足迹</li></a> 
-                           <a href=""><li>联系客服</li></a> 
-                           <a href=""><li>帮助中心</li></a> 
+        <div id="fixdheader">
+                <div class="fixdheader-content">
+                    <div class="fixdheader_left">
+                        <p>尚为商城欢迎您，
+                            <a href="login.html">登录</a>/<a href="register.html">注册</a>
+                        </p>
+                    </div>
+                    <div class="fixdheader_right">
+                        <ul>
+                           
+                                <li><a href="user.html">用户中心 </a></li>
+                                <li> <a href="#">我的足迹 </a></li>
+                                <li><a href="#">联系客服</a></li>
+                                <li><a href="#">帮助中心</a></li>
+                   
                         </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
     <header >
         <section class="header-top clearfix">
-            <div class="logo">
-                    <a class="logoimg" href="index.html"> <img src="../images/logo.png" alt=""></a>
-                    <p>
-                    <br> 我们只想伴你走过一段温柔的时光，
-                    <br> 不疏不离，不舍不弃。
-                    <br> 小小酒杯载不动山高水长，殷殷里飘起缕缕牵肠的欲说还休。
-                </p>
-            </div>
+                <div class="logo">
+                        <a class="logoimg" href="index.html">
+                            <img src="../images/index_logo.png" alt="">
+                        </a>
+                        <p class="logo_txt">
+                            <br> 我们只想伴你走过一段温柔的时光，
+                            <br> 不疏不离，不舍不弃。
+                            <br> 小小酒杯载不动山高水长，殷殷里飘起缕缕牵肠的欲说还休。
+                        </p>
+                    </div>
             <div class="search">
                 <div class="search-input">
                     <input type="text" placeholder="请输入您想要的商品">
                     <input type="button" value="搜索" name="search">
                     <div class="search-keyword">
                         <ul>
-                            <li>红酒杯</li>
-                            <li>白酒杯</li>
-                            <li>啤酒杯</li>
-                            <li> 酒壶 </li>
-                            <li>开酒器</li>
-                            <li>酒具套装</li>
+                            <li><a href="shop_list.html">红酒杯</a></li>
+                            <li><a href="shop_list.html">白酒杯  </a></li>
+                            <li><a href="shop_list.html">啤酒杯  </a></li>
+                            <li><a href="shop_list.html">酒壶    </a> </li>
+                            <li><a href="shop_list.html">开酒器  </a> </li>
+                            <li><a href="shop_list.html">酒具套装</a> </li>
                         </ul>
                     </div>
                 </div>
@@ -65,26 +69,57 @@
             </div>
         </section>
   
-        <section class="header-bottom ">
-            <ul class="one">
-                <li style="background-color:#101113; color: #fff;">全部商品分类<span class="trigonBottom"></span>
+        <section class="nav">
+            <div class="firnav">
+                <div class="shop-listli title-ulhover"><a  class="shop-list" href="shop_list.html">全部商品分类</a>
+                    <span class="trigonBottom"></span>
                     <ul class="title-ul">
-                        <li><a href="#">红酒杯</a></li>
-                        <li><a href="#">白酒杯</a></li>
-                        <li><a href="#">啤酒杯</a></li>
-                        <li><a href="#"> 酒壶 </a></li>
-                        <li><a href="#">开酒器</a></li>
-                        <li><a href="#" class="special">酒具套装</a></li>
-                     </ul>
+                        <li>
+                            <a href="shop_list.html">红酒杯</a>
+                        </li>
+                        <li>
+                            <a href="shop_list.html">白酒杯</a>
+                        </li>
+                        <li>
+                            <a href="shop_list.html">啤酒杯</a>
+                        </li>
+                        <li>
+                            <a href="shop_list.html"> 酒壶 </a>
+                        </li>
+                        <li>
+                            <a href="shop_list.html">开酒器</a>
+                        </li>
+                        <li>
+                            <a href="shop_list.html" class="special">酒具套装</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="subnav">
+                <li>
+                    <a href="index.html">首页</a>
+                    <span></span>
                 </li>
-            </ul>
-                <ul class="two">
-                <li><a href="#" style="color: #ff0000">首页</a><span class="trigonTopnodisplay"></span></li>
-                <li><a href="#">玻璃材质</a><span></span></li>
-                <li><a href="#">金属材质</a><span></span></li>
-                <li><a href="#">陶瓷材质</a><span></span></li>
-                <li><a href="#">酒具套装</a><span></span></li>
-                <li><a href="#">个性定制</a><span></span></li>
+                <li>
+                    <a href="shop_list.html">玻璃材质</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="shop_list.html">金属材质</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="shop_list.html">陶瓷材质</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="shop_list.html">酒具套装</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="shop_list.html">个性定制</a>
+                    <span></span>
+                </li>
             </ul>
         </section>
       </div>
@@ -135,20 +170,20 @@
                     <td>莱美斯高端水晶玻璃杯，高脚杯
                             1号杯  450ML 
                             单只包装  升级版</td>
-                    <td>￥66.00</td>
-                    <td>1</td>
-                    <td>￥66.00</td>
-                    <td>删除</td>
+                    <td><em>￥</em><span  class="unitPrice">66.00</span></td>
+                    <td class="num">2</td>
+                    <td =><em>￥</em><span class="price"></span></td>
+                    <td class="del">删除</td>
               </tr>
               <tr>
                     <td><img src="../images/confirm_orderpic2.png" alt=""></td>
                     <td>莱美斯高端水晶玻璃杯，高脚杯
                             1号杯  450ML 
                             单只包装  升级版</td>
-                    <td>￥66.00</td>
-                    <td>1</td>
-                    <td>￥66.00</td>
-                    <td>删除</td>
+                    <td><em>￥</em><span  class="unitPrice">66.00</span></td>
+                    <td class="num">1</td>
+                    <td =><em>￥</em><span class="price"></span></td>
+                    <td class="del">删除</td>
               </tr>
       <form action="pay.html">       
        <tr>
@@ -156,9 +191,9 @@
           <div class="way">
               <ul class="title">
                   <li>使用发票：开票抬头
-                          <input type="checkbox"><span>不开票</span>
-                          <input type="checkbox"><span>个人</span>
-                          <input type="checkbox"><span>公司</span>
+                          <input name="invoice" type="radio" id="noTicket"><label for="noTicket">不开票</label>
+                          <input name="invoice" type="radio" id="personal"><label for="personal">个人</label>
+                          <input name="invoice" type="radio" id="pc"><label for="pc">公司</label>
                       </li>
                     </ul>
 
@@ -169,17 +204,19 @@
                 </ul>
                 <div class="selectstyle">
                 <div>
-                <select name="" id="" selected> 
+                <select name="coupons" id="coupons" selected> 
                         <option>请选择优惠劵</option>
+                        <option>优惠劵一</option>
                       </select>
               </div>
                     <div>
-                      <select name="" id="" selected> 
+                      <select name="personliable" id="personliable" selected> 
                             <option>卖家承担</option>
+                            <option>选我</option>
                  </select>
                  </div>
                 </div>
-                     <textarea ></textarea>
+                     <textarea style="resize: none"></textarea>
           </div>
         </td>
         </tr>
@@ -187,8 +224,8 @@
         <tr>
             <td align="right" colspan="6">
                 <div class="submit">
-                <p>已选择<span>2</span>件商品</p>
-                <p>合计<span>￥132.00</span></p>
+                <p>已选择<span class="goodsNum"></span>件商品</p>
+                <p>合计<em class="goodsPrice-em">￥</em><span class="goodsPrice">132.00</span></p>
                 <input type="submit" value="提交订单">
             </div>
             </td>
@@ -208,16 +245,14 @@
         <div class="first-footer  clearfix">
             <ul>
                 <li>
-                   <a href="#">
-                        <p>100%品牌保证</p>  
-                    </a>
+                     <span></span>100%品牌保证
                 </li>
-                <li> <a href="#">
-                        <p>7天无理由退换</p>  
-                    </a></li>
-                <li> <a href="#">
-                        <p>售后服务保障</p>  
-                    </a></li>
+                <li>
+                     <span></span>7天无理由退换
+                </li>
+                <li>
+                    <span></span>售后服务保障
+                </li>
             </ul>
 
         </div>
@@ -270,9 +305,6 @@
     </footer>
 </body>
 <script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
-<script>
-    $(".address ul").click(function(){
-        $(this).addClass("hoversquer").siblings().removeClass();
-    })
-</script>
+<script src="../js/confirm_order.js"></script>
+<script src="../js/index.js"></script>
 </html>

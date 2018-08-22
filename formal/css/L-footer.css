@@ -75,31 +75,26 @@ footer .footerone .first-footer {
   margin: 0 auto;
 }
 footer .footerone .first-footer li {
-  width: 126px;
-  padding: 0 62px;
+  width: 150px;
   float: left;
+  margin: 0 55.5px;
+  text-align: center;
+  color: #2c2c2c;
+  font-size: 18px;
 }
-footer .footerone .first-footer li a {
+footer .footerone .first-footer li span {
   width: 87px;
   height: 87px;
   display: block;
   margin: 0 auto;
 }
-footer .footerone .first-footer li a p {
-  position: relative;
-  top: 94px;
-  left: -21px;
-  font-size: 18px;
-  width: 150px;
-  color: #2c2c2c;
-}
-footer .footerone .first-footer li:first-child a {
+footer .footerone .first-footer li:first-child span {
   background: url(../images/ft1.png) no-repeat;
 }
-footer .footerone .first-footer li:nth-child(2) a {
+footer .footerone .first-footer li:nth-child(2) span {
   background: url(../images/ft2.png) no-repeat;
 }
-footer .footerone .first-footer li:last-child a {
+footer .footerone .first-footer li:last-child span {
   background: url(../images/ft3.png) no-repeat;
 }
 footer .footerone .second-footer {
@@ -109,13 +104,14 @@ footer .footerone .second-footer {
 }
 footer .footerone .second-footer dl {
   float: left;
-  padding-right: 138px;
+  padding-right: 136px;
 }
 footer .footerone .second-footer dl dt {
   font-size: 22px;
 }
 footer .footerone .second-footer dl dd {
   font-size: 16px;
+  margin: 10px 0;
 }
 footer .footerone .second-footer dl dd a {
   color: #2c2c2c;

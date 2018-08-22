@@ -157,6 +157,12 @@ a {
 .content .main .order_details .details_list table .goodsImg {
   width: 400px;
 }
+.content .main .order_details .details_list table .goodsImg a {
+  color: #000;
+}
+.content .main .order_details .details_list table .goodsImg a:hover {
+  color: #ff0000;
+}
 .content .main .order_details .details_list table .goodsImg div {
   float: left;
   margin-left: 30px;

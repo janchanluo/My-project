@@ -145,6 +145,7 @@ a {
 .content .main .userMessage .userinfo dl dd.score span,
 .content .main .userMessage .userinfo dl dd.coupon span {
   color: #ff0000;
+  cursor: pointer;
 }
 .content .main .order {
   margin-top: 45px;
@@ -162,32 +163,38 @@ a {
 .content .main .order table tr td {
   padding: 20px;
 }
-.content .main .order table tr td.googsImg {
+.content .main .order table tr .googsImg {
   width: 350px;
 }
-.content .main .order table tr td.googsImg img {
+.content .main .order table tr .googsImg a {
+  color: #000;
+}
+.content .main .order table tr .googsImg a:hover {
+  color: #ff0000;
+}
+.content .main .order table tr .googsImg img {
   float: left;
 }
-.content .main .order table tr td.googsImg dl {
+.content .main .order table tr .googsImg dl {
   position: relative;
   font-size: 14px;
   left: 15px;
   line-height: 30px;
 }
-.content .main .order table tr td.money div {
+.content .main .order table tr .money div {
   float: left;
 }
-.content .main .order table tr td.money div p {
+.content .main .order table tr .money div p {
   font-size: 24px;
 }
-.content .main .order table tr td.money div p em {
+.content .main .order table tr .money div p em {
   font-style: normal;
 }
-.content .main .order table tr td.money div p:last-child {
+.content .main .order table tr .money div p:last-child {
   text-decoration: line-through;
   color: #7e7e7e;
 }
-.content .main .order table tr td.money span.success {
+.content .main .order table tr .money span.success {
   display: inline-block;
   float: right;
   margin-top: 15px;
@@ -209,8 +216,13 @@ a {
 .content .main .order button {
   background-color: #cd0505;
   color: #fff;
-  padding: 10px 5px;
+  padding: 10px 2px;
   border: none;
   margin-top: 20px;
+  cursor: pointer;
   float: right;
+}
+.content .main .order button a {
+  padding: 12px 6px;
+  color: #fff;
 }

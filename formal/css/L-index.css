@@ -64,8 +64,6 @@ a {
 .banner {
   margin-top: 34px;
   width: 100%;
-  overflow: hidden;
-  position: relative;
 }
 #content {
   width: 1200px;
@@ -78,60 +76,37 @@ a {
 }
 #content .top .topimg {
   background: url(../images/top.png) no-repeat;
-  width: 208px;
+  width: 100%;
   height: 60px;
 }
-#content .top .topimg span {
+#content .top .topimg h3 {
   color: #fff;
   line-height: 60px;
   padding-left: 30px;
   font-size: 20px;
-}
-#content .top .bord2 {
-  border-bottom: 5px solid #101113;
-  position: absolute;
-  width: 1185px;
-  bottom: 0;
-  overflow: hidden;
-  left: 15px;
-  z-index: -1;
-}
-#content .top .bord1 {
-  border-bottom: 3px solid #101113;
-  position: absolute;
-  width: 630px;
-  bottom: 15px;
-  overflow: hidden;
-  left: 15px;
-  z-index: -1;
+  font-weight: bold;
+  font-family: "微软雅黑";
 }
 #content .new {
   margin-top: 20px;
 }
-#content .new ul li {
+#content .new .new_left li {
   font-size: 0;
+  float: left;
   border: 2px solid #fff;
 }
-#content .new ul li:hover {
+#content .new .new_left li:hover {
   border: 2px solid #a80202;
 }
-#content .new ul .left {
-  float: left;
+#content .new .new_left li:first-child {
+  margin-bottom: 10px;
 }
-#content .new ul .left .left-bottom {
-  padding-top: 10px;
-}
-#content .new ul .left .left-bottom li:first-child {
-  float: left;
-}
-#content .new ul .left .left-bottom li:last-child {
-  float: right;
-}
-#content .new ul .right {
+#content .new .new_left li:nth-child(2) {
   float: right;
 }
 #content .more {
-  margin-top: -10px;
+  margin-top: -2px;
+  z-index: 999;
   height: 65px;
   position: relative;
 }
@@ -140,23 +115,31 @@ a {
   height: 35px;
   position: absolute;
   right: 50px;
-  top: 20px;
+  top: 15px;
   color: #fff;
   font-size: 18px;
   line-height: 35px;
   background-color: #3f3e3e;
   text-align: center;
 }
-#content .more .landscape {
+#content .more .moreAfter::after {
+  content: "";
+  display: block;
   width: 356px;
-  position: relative;
-  top: 35px;
   height: 5px;
+  background-color: #3f3e3e;
+  position: relative;
+  top: 30px;
   left: 844px;
   z-index: -1;
-  background-color: #3f3e3e;
 }
-#content .more .portrait {
+#content .more .moreAfter,
+#content .more .moreAfter {
+  zoom: 1;
+}
+#content .more .moreAfter::before {
+  content: "";
+  display: block;
   width: 5px;
   height: 65px;
   position: absolute;
@@ -168,9 +151,15 @@ a {
   margin-top: 20px;
 }
 #content .hot ul li {
+  margin-right: 10px;
   float: left;
   border: 2px solid #fff;
-  margin-right: 13px;
+}
+#content .hot ul li:nth-child(2) {
+  margin-left: 2px;
+}
+#content .hot ul li:nth-child(3) {
+  margin-left: 2px;
 }
 #content .hot ul li a {
   color: #2c2c2c;
@@ -213,40 +202,23 @@ a {
 #content .hot ul li:nth-child(3n) {
   margin-right: 0;
 }
-#content .hot ul .hot-last li {
-  margin-right: 10px;
-}
-#content .hot ul .hot-last li:nth-child(3n) {
-  margin-right: 0;
-  float: right;
-}
 #content .selected {
   margin-top: 20px;
 }
 #content .selected li {
   font-size: 0;
   float: left;
+}
+#content .selected li img {
   border: 2px solid #fff;
 }
-#content .selected li:hover {
+#content .selected li img:hover {
   border: 2px solid #a80202;
 }
-#content .selected ul.selected-first {
-  float: left;
+#content .selected li ul {
+  margin-top: 10px;
 }
-#content .selected ul.selected-first .first-bottom li:first-child {
-  float: left;
-}
-#content .selected ul.selected-first .first-bottom li:last-child {
-  float: right;
-}
-#content .selected ul.selected-second {
-  float: right;
-}
-#content .selected ul.selected-second .second-bottom li:first-child {
-  float: left;
-}
-#content .selected ul.selected-second .second-bottom li:last-child {
+#content .selected li:nth-child(2) {
   float: right;
 }
 #content .explosion {
@@ -307,7 +279,7 @@ a {
   color: #fff;
 }
 #content .explosion .explosion-right .right-second {
-  margin-top: 16px;
+  margin-top: 19px;
 }
 #content .explosion .explosion-right a div {
   background-color: #d7d3d3;

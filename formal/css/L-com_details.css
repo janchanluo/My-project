@@ -86,64 +86,65 @@ a {
 .content .title ul li:last-child {
   color: #ff0000;
 }
-.content .goodsmessage .left .goodsshow {
+.content .goodsmessage .goodsmessage_left .goodsshow {
   float: left;
 }
-.content .goodsmessage .left .goodsshow .goodsshow_artwork_show #zoom {
+.content .goodsmessage .goodsmessage_left .goodsshow .goodsshow_artwork_show #zoom {
   width: 400px;
   height: 452px;
   position: absolute;
   overflow: hidden;
   background: #000;
 }
-.content .goodsmessage .left .goodsshow .goodsshow_artwork_show #zoom img {
-  width: 1000px;
+.content .goodsmessage .goodsmessage_left .goodsshow .goodsshow_artwork_show #zoom img {
+  width: 1500px;
   position: absolute;
 }
-.content .goodsmessage .left .goodsshow .goodsshow_artwork {
+.content .goodsmessage .goodsmessage_left .goodsshow .goodsshow_artwork {
   position: relative;
 }
-.content .goodsmessage .left .goodsshow .goodsshow_artwork img {
+.content .goodsmessage .goodsmessage_left .goodsshow .goodsshow_artwork img {
   width: 446px;
   height: 452px;
 }
-.content .goodsmessage .left .goodsshow .goodsshow_artwork span {
+.content .goodsmessage .goodsmessage_left .goodsshow .goodsshow_artwork span {
   width: 140px;
   height: 140px;
   opacity: 0.3;
   background: #38344e;
   position: absolute;
 }
-.content .goodsmessage .left .goodsshow .goodsshow_thumbnailList {
+.content .goodsmessage .goodsmessage_left .goodsshow .goodsshow_thumbnailList {
   position: relative;
 }
-.content .goodsmessage .left .goodsshow .goodsshow_thumbnailList ul {
-  margin: 0 auto;
-  width: 400px;
-  height: 82px;
-  padding-top: 15px;
+.content .goodsmessage .goodsmessage_left .goodsshow .goodsshow_thumbnailList .goodsshow_div {
   overflow: hidden;
-  padding-bottom: 5px;
+  width: 400px;
+  height: 100px;
+  margin-left: 23px;
 }
-.content .goodsmessage .left .goodsshow .goodsshow_thumbnailList ul li {
+.content .goodsmessage .goodsmessage_left .goodsshow .goodsshow_thumbnailList .goodsshow_div .goodsshow_thumbnail {
+  margin: 0 auto;
+  height: 82px;
+  margin-top: 15px;
+  padding-bottom: 5px;
+  margin-left: -200px;
+}
+.content .goodsmessage .goodsmessage_left .goodsshow .goodsshow_thumbnailList .goodsshow_div .goodsshow_thumbnail li {
   font-size: 0;
   margin: 0 7px;
   float: left;
-}
-.content .goodsmessage .left .goodsshow .goodsshow_thumbnailList .goodsshow_thumbnail {
-  font-size: 0;
-}
-.content .goodsmessage .left .goodsshow .goodsshow_thumbnailList .goodsshow_thumbnail li {
   border: 2px solid #fff;
 }
-.content .goodsmessage .left .goodsshow .goodsshow_thumbnailList .goodsshow_thumbnail li:hover {
+.content .goodsmessage .goodsmessage_left .goodsshow .goodsshow_thumbnailList .goodsshow_div .goodsshow_thumbnail li:hover {
   border: 2px solid #b40303;
+  cursor: pointer;
 }
-.content .goodsmessage .left .goodsshow .goodsshow_thumbnailList .goodsshow_thumbnail img {
+.content .goodsmessage .goodsmessage_left .goodsshow .goodsshow_thumbnailList .goodsshow_div .goodsshow_thumbnail li img {
   width: 82px;
   height: 82px;
 }
-.content .goodsmessage .left .goodsshow .changeleft {
+.content .goodsmessage .goodsmessage_left .goodsshow .changeleft {
   background: url(../images/com_detailsleft.png) no-repeat;
   width: 23px;
   height: 46px;
@@ -152,43 +153,43 @@ a {
   position: absolute;
   left: 0;
 }
-.content .goodsmessage .left .goodsshow .changeright {
+.content .goodsmessage .goodsmessage_left .goodsshow .changeright {
   background: url(../images/com_detailsright.png) no-repeat;
   width: 23px;
   height: 46px;
   display: block;
   position: absolute;
   right: 0;
-  top: 50%;
-  margin-top: -12px;
+  top: 0;
+  margin-top: 40px;
 }
-.content .goodsmessage .right {
+.content .goodsmessage .goodsmessage_right {
   width: 595px;
-  margin-top: -25px;
+  margin-top: -23px;
   margin-left: 80px;
   float: left;
 }
-.content .goodsmessage .right .title p:first-child {
+.content .goodsmessage .goodsmessage_right .title p:first-child {
   font-size: 22px;
   line-height: 40px;
 }
-.content .goodsmessage .right .title p:last-child {
+.content .goodsmessage .goodsmessage_right .title p:last-child {
   margin-top: 10px;
   line-height: 25px;
   font-size: 14px;
 }
-.content .goodsmessage .right .otermessage em {
+.content .goodsmessage .goodsmessage_right .otermessage em {
   font-style: normal;
 }
-.content .goodsmessage .right .otermessage dt {
+.content .goodsmessage .goodsmessage_right .otermessage dt {
   float: left;
   font-size: 16px;
 }
-.content .goodsmessage .right .otermessage dd {
+.content .goodsmessage .goodsmessage_right .otermessage dd {
   padding-left: 80px;
   margin-bottom: 20px;
 }
-.content .goodsmessage .right .otermessage .spec span {
+.content .goodsmessage .goodsmessage_right .otermessage .spec span {
   moz-user-select: -moz-none;
   -moz-user-select: none;
   -o-user-select: none;
@@ -204,14 +205,14 @@ a {
   line-height: 32px;
   margin-right: 50px;
 }
-.content .goodsmessage .right .otermessage .spec span:last-child {
+.content .goodsmessage .goodsmessage_right .otermessage .spec span:last-child {
   margin-right: 0;
 }
-.content .goodsmessage .right .otermessage .spec .bag_span {
+.content .goodsmessage .goodsmessage_right .otermessage .spec .bag_span {
   background: #c58b00;
   color: #fff;
 }
-.content .goodsmessage .right .otermessage .choosenum button {
+.content .goodsmessage .goodsmessage_right .otermessage .choosenum button {
   background-color: #cbc9c9 ;
   font-weight: 400;
   border-style: none;
@@ -222,11 +223,11 @@ a {
   line-height: 24px;
   margin-left: -5px;
 }
-.content .goodsmessage .right .otermessage .choosenum .reduce,
-.content .goodsmessage .right .otermessage .choosenum .add {
+.content .goodsmessage .goodsmessage_right .otermessage .choosenum .reduce,
+.content .goodsmessage .goodsmessage_right .otermessage .choosenum .add {
   cursor: pointer;
 }
-.content .goodsmessage .right .otermessage .choosenum .num {
+.content .goodsmessage .goodsmessage_right .otermessage .choosenum .num {
   background-color: #e6e3e3 ;
   text-align: center;
   border-style: none;
@@ -234,36 +235,39 @@ a {
   height: 24px;
   margin-left: -5px;
 }
-.content .goodsmessage .right .otermessage .choosenum span {
+.content .goodsmessage .goodsmessage_right .otermessage .choosenum span {
   margin-left: 30px;
 }
-.content .goodsmessage .right .otermessage .choosenum span em {
+.content .goodsmessage .goodsmessage_right .otermessage .choosenum span em {
   color: #ff0000;
   font-style: normal;
 }
-.content .goodsmessage .right .otermessage .price {
+.content .goodsmessage .goodsmessage_right .otermessage .price {
   color: #ff0000;
 }
-.content .goodsmessage .right .otermessage .sale {
+.content .goodsmessage .goodsmessage_right .otermessage .sale {
   color: #ff0000;
 }
-.content .goodsmessage .right .otermessage .submit {
-  text-align: center;
+.content .goodsmessage .goodsmessage_right .otermessage .submit {
   margin-top: 30px;
 }
-.content .goodsmessage .right .otermessage .submit button {
+.content .goodsmessage .goodsmessage_right .otermessage .submit a {
+  text-align: center;
   background-color: #b40303;
   border: none;
+  display: block;
   width: 172px;
   height: 55px;
+  line-height: 55px;
   margin-right: 40px;
   color: #fff;
   cursor: pointer;
+  float: left;
 }
-.content .goodsmessage .right .otermessage ol {
+.content .goodsmessage .goodsmessage_right .otermessage ol {
   margin-top: 45px;
 }
-.content .goodsmessage .right .otermessage ol li {
+.content .goodsmessage .goodsmessage_right .otermessage ol li {
   float: left;
   margin-right: 60px;
 }
@@ -364,7 +368,7 @@ a {
   margin-top: 50px;
   display: none;
 }
-.content .section .comment .productInfo .descripttion .left {
+.content .section .comment .productInfo .descripttion .productInfo_left {
   float: left;
   height: 354px;
   font-size: 20px;
@@ -373,13 +377,13 @@ a {
   padding: 10px 20px 0 20px;
   line-height: 35px;
 }
-.content .section .comment .productInfo .descripttion .left p {
+.content .section .comment .productInfo .descripttion .productInfo_left p {
   font-size: 24px;
 }
-.content .section .comment .productInfo .descripttion .left dt {
+.content .section .comment .productInfo .descripttion .productInfo_left dt {
   float: left;
 }
-.content .section .comment .productInfo .descripttion .right {
+.content .section .comment .productInfo .descripttion .productInfo_right {
   float: right;
 }
 .content .section .comment .productInfo .goodsShow {
@@ -447,7 +451,7 @@ a {
 .content .section .comment .comment_all .praise {
   margin-top: 75px;
 }
-.content .section .comment .comment_all .praise .left {
+.content .section .comment .comment_all .praise .comment_left {
   float: left;
   color: #ff0000;
   border: 2px solid #4f4d4d;
@@ -455,28 +459,33 @@ a {
   width: 180px;
   height: 165px;
 }
-.content .section .comment .comment_all .praise .left .good {
+.content .section .comment .comment_all .praise .comment_left .good {
   font-size: 30px;
   margin-top: 25px;
 }
-.content .section .comment .comment_all .praise .left .much {
+.content .section .comment .comment_all .praise .comment_left .much {
   font-size: 60px;
 }
-.content .section .comment .comment_all .praise .right h2 {
+.content .section .comment .comment_all .praise .comment_right h2 {
   position: relative;
   font-size: 24px;
   font-weight: 400;
   left: 35px;
 }
-.content .section .comment .comment_all .praise .right ul {
+.content .section .comment .comment_all .praise .comment_right ul {
   text-align: center;
 }
-.content .section .comment .comment_all .praise .right ul li {
+.content .section .comment .comment_all .praise .comment_right ul li {
   float: left;
   border: 1px solid #101113;
   margin: 10px 35px;
   width: 110px;
   height: 25px;
+  cursor: pointer;
+}
+.content .section .comment .comment_all .praise .comment_right ul .choose {
+  background-color: #c58b00;
+  color: #fff;
 }
 .content .section .comment .comment_all .comment-nav {
   margin-top: 60px;
@@ -520,6 +529,10 @@ a {
   float: left;
   padding-left: 28px;
 }
+.content .section .comment .comment_all .comment-list .commentmessage .commentlook .userdo .report,
+.content .section .comment .comment_all .comment-list .commentmessage .commentlook .userdo .reply {
+  cursor: pointer;
+}
 .content .section .comment .comment_all .comment-list .commentmessage .commentlook .star {
   float: left;
 }
@@ -530,15 +543,15 @@ a {
   display: inline-block;
 }
 .content .section .comment .page {
-  float: right;
-  position: relative;
-  left: -90px;
+  text-align: center;
+  margin-top: 85px;
 }
-.content .section .comment .page .previous,
-.content .section .comment .page .nextpage,
-.content .section .comment .page .lastpage {
+.content .section .comment .page a.previous,
+.content .section .comment .page a.nextpage,
+.content .section .comment .page a.lastpage {
   background-color: #080808;
   padding: 5px 10px;
+  margin: 0 10px;
   color: #fff;
 }
 .content .section .comment .page .pagenum {
@@ -547,13 +560,23 @@ a {
 .content .section .comment .page .pagenum a {
   background-color: #d9d6d6;
   padding: 5px 10px;
+  margin: 0 3px;
   color: #000;
+}
+.content .section .comment .page .pagenum a:first-child {
+  color: #fff;
+  background-color: #000;
+}
+.content .section .comment .page .pagenum a:hover {
+  color: #fff;
+  background-color: #000;
 }
 .content .section .comment .page input.choosepage {
   border: 1px solid #4f4d4d;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
   width: 20px;
   height: 20px;
   display: inline-block;
+  margin: 0 5px;
 }

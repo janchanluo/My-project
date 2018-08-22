@@ -138,7 +138,7 @@ a {
   color: #ff0000;
 }
 .content .evaluate .myevaluate {
-  width: 645px;
+  width: 659px;
 }
 .content .evaluate .myevaluate > p.title {
   padding: 20px 0;
@@ -151,6 +151,7 @@ a {
   margin-bottom: 25px;
 }
 .content .evaluate .myevaluate .comment span {
+  cursor: pointer;
   display: inline-block;
   background: url(../images/stargrey.png) no-repeat;
   width: 23px ;
@@ -172,6 +173,7 @@ a {
 }
 .content .evaluate .myevaluate .textarea textarea {
   width: 645px;
+  padding: 6px;
 }
 .content .evaluate .myevaluate .textarea span.txtnum {
   position: absolute;
@@ -184,49 +186,71 @@ a {
 .content .evaluate .myevaluate .file {
   margin-top: 35px;
 }
-.content .evaluate .myevaluate .file .upload {
-  padding: 5px 10px;
+.content .evaluate .myevaluate .file .fileImg {
+  position: relative;
+  float: left;
+}
+.content .evaluate .myevaluate .file .fileImg .upload {
+  cursor: pointer;
+  padding: 8px 10px;
   height: 20px;
   line-height: 20px;
-  position: relative;
   text-decoration: none;
   top: -5px;
   margin-right: 35px;
   background-color: #888787;
   color: #fff;
 }
-.content .evaluate .myevaluate .file .change {
+.content .evaluate .myevaluate .file .fileImg .upload label {
+  cursor: pointer;
+  display: block;
+}
+.content .evaluate .myevaluate .file .fileImg .change {
   position: absolute;
   overflow: hidden;
-  right: 0;
+  left: 0;
+  width: 80px;
+  top: -4px;
   opacity: 0;
+  cursor: pointer;
 }
-.content .evaluate .myevaluate .file > div {
+.content .evaluate .myevaluate .file .fileCheck .anonymous,
+.content .evaluate .myevaluate .file .fileCheck .public {
+  float: left;
+  cursor: pointer;
+}
+.content .evaluate .myevaluate .file .fileCheck .inputChoose {
   background: url(../images/radius.png) no-repeat;
   width: 22px;
   height: 22px;
   margin-left: 40px;
-  cursor: pointer;
   display: inline-block;
 }
-.content .evaluate .myevaluate .file > div input {
-  opacity: 0;
+.content .evaluate .myevaluate .file .fileCheck input {
+  display: none;
+  cursor: pointer;
   width: 22px;
   height: 22px;
 }
-.content .evaluate .myevaluate .file .checked {
+.content .evaluate .myevaluate .file .fileCheck .checked {
+  margin-left: 40px;
   background: url("../images/checkedradius.png") no-repeat;
   width: 22px;
   height: 22px;
+  display: inline-block;
 }
-.content .evaluate .myevaluate .file span {
+.content .evaluate .myevaluate .file .fileCheck label {
   vertical-align: top;
-  padding: 0 20px;
+  margin: 0 10px;
+  line-height: 22px;
+  cursor: pointer;
 }
 .content .evaluate .myevaluate button {
   float: right;
   color: #fff;
+  cursor: pointer;
   background-color: #b40303;
   padding: 8px 10px;
   border: none;
+  clear: both;
 }

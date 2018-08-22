@@ -5,59 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>用户登录</title>
     <link rel="stylesheet" type="" href="../css/L-login.css">
     <link rel="stylesheet" type="" href="../css/L-footer.css">
 </head>
 
 <body>
-    <div id="fixdheader">
-        <div class="fixdheader-content">
-            <div class="left">
-                <p>尚为商城欢迎您，
-                    <a href="login.html">登录/注册</a>
-                </p>
+        <div id="fixdheader">
+                <div class="fixdheader-content">
+                    <div class="fixdheader_left">
+                        <p>尚为商城欢迎您，
+                            <a href="login.html">登录</a>/<a href="register.html">注册</a>
+                        </p>
+                    </div>
+                    <div class="fixdheader_right">
+                        <ul>
+                           
+                                <li><a href="user.html">用户中心 </a></li>
+                                <li> <a href="#">我的足迹 </a></li>
+                                <li><a href="#">联系客服</a></li>
+                                <li><a href="#">帮助中心</a></li>
+                   
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="right">
-                <ul>
-                    <li>用户中心</li>
-                    <li>我的足迹</li>
-                    <li>联系客服</li>
-                    <li>帮助中心</li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <header>
         <section class="header-top clearfix">
-            <div class="logo">
-               <a class="logoimg" href="index.html"> <img src="../images/logo.png" alt=""></a>
-                <p>如果可以，
-                    <br> 我们只想伴你走过一段温柔的时光，
-                    <br> 不疏不离，不舍不弃。
-                    <br> 小小酒杯载不动山高水长，殷殷里飘起缕缕牵肠的欲说还休。
-                </p>
-            </div>
+                <div class="logo">
+                        <a class="logoimg" href="index.html">
+                            <img src="../images/index_logo.png" alt="">
+                        </a>
+                        <p class="logo_txt">
+                            <br> 我们只想伴你走过一段温柔的时光，
+                            <br> 不疏不离，不舍不弃。
+                            <br> 小小酒杯载不动山高水长，殷殷里飘起缕缕牵肠的欲说还休。
+                        </p>
+                    </div>
         </section>
     </header>
     <div class="content" >
            <div class="login">
                <div class="blackhead">用户登录</div>
                <div class="form">
-                   <form action="">
-                        <ul>
-                                <li><strong>用户名</strong><input type="text" name="username" placeholder="请输入用户名"></li>
-                                <li><strong>密码</strong><input type="text" name="password" placeholder="请输入密码"></li>
+                   <form action="index.html">
+                                <div class="userInput"><strong>用户名</strong><input id="username" type="text" name="username" placeholder="请输入用户名"></div>
+                                <p class="message_user">请检查用户名输入是否有误</p>
+                                <div class="pwInput"><strong>密码</strong><input id="pw" type="text" name="password" placeholder="请输入密码"></div>
+                                <p class="message_pw">请检查密码输入是否有误</p>
                                 <div class="code clearfix">
-                                <li><strong>验证码</strong><input name="code" type="text" placeholder="请输入验证码"></li>
+                                <div class="codeInput"><strong>验证码</strong><input name="code" type="text" placeholder="请输入验证码"></div>
                                 <div id="idcode"></div>
                              </div>
-                             <li class="message clearfix">
+                             <div class="message clearfix">
                                  <p><a href="register.html">免费注册</a></p>
-                                 <p>忘记密码</p>
-                             </li>
+                                 <p><a href="#">忘记密码</a></p>
+                             </div>
                              <input type="submit" name="submit" value="确定登录">
-                             </ul>
                             
                    </form>
                </div>
@@ -68,16 +72,14 @@
             <div class="first-footer  clearfix">
                 <ul>
                     <li>
-                       <a href="#">
-                            <p>100%品牌保证</p>  
-                        </a>
+                         <span></span>100%品牌保证
                     </li>
-                    <li> <a href="#">
-                            <p>7天无理由退换</p>  
-                        </a></li>
-                    <li> <a href="#">
-                            <p>售后服务保障</p>  
-                        </a></li>
+                    <li>
+                         <span></span>7天无理由退换
+                    </li>
+                    <li>
+                        <span></span>售后服务保障
+                    </li>
                 </ul>
     
             </div>
@@ -131,13 +133,5 @@
 </body>
 <script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
 <script src="../js/jquery.idcode.js"></script>
-<script>
-    $.idcode.setCode();
-    
-    $("#btns").click(function (){
-        var IsBy = $.idcode.validateCode(); 
-        alert(IsBy);
-        console.log(IsBy);
-    });
-</script>
+<script src="../js/login.js"></script>
 </html>

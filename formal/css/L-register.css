@@ -75,21 +75,24 @@ a {
   color: #fff;
   margin: 0 auto;
 }
-#fixdheader .fixdheader-content .left {
+#fixdheader .fixdheader-content .fixdheader_left {
   float: left;
 }
-#fixdheader .fixdheader-content .left p a {
+#fixdheader .fixdheader-content .fixdheader_left p a {
   color: #00b7fb;
 }
-#fixdheader .fixdheader-content .right {
+#fixdheader .fixdheader-content .fixdheader_right {
   float: right;
 }
-#fixdheader .fixdheader-content .right ul li {
+#fixdheader .fixdheader-content .fixdheader_right ul li {
   float: left;
-  padding: 0 15px;
+  padding: 0 10px;
   cursor: pointer;
 }
-#fixdheader .fixdheader-content .right ul li:last-child {
+#fixdheader .fixdheader-content .fixdheader_right ul li a {
+  color: #fff;
+}
+#fixdheader .fixdheader-content .fixdheader_right ul li:last-child {
   padding-right: 0;
 }
 header {
@@ -104,11 +107,11 @@ header .header-top .logo {
   float: left;
 }
 header .header-top .logo .logoimg {
-  border-right: 1px solid #666;
   padding-right: 20px;
   float: left;
 }
-header .header-top .logo p {
+header .header-top .logo .logo_txt {
+  display: none;
   position: relative;
   left: 20px;
   font-size: 12px;
@@ -152,15 +155,6 @@ header .header-top .logo p {
   width: 530px;
   margin: 0 auto;
   margin-top: 26px;
-  text-align: center;
-}
-.content .login .form form ul > li:last-child {
-  margin-left: 70px;
-}
-.content .login .form form ul > li:last-child span {
-  font-size: 12px;
-  position: relative;
-  top: -5px;
 }
 .content .login .form form strong {
   font-size: 24px;
@@ -170,48 +164,63 @@ header .header-top .logo p {
   left: 20px;
   float: left;
   height: 40px;
-  margin: 7px 0;
-  line-height: 40px;
-  display: inline-block;
+  line-height: 48px;
+}
+.content .login .form form .message_user,
+.content .login .form form .message_pw,
+.content .login .form form .message_phone,
+.content .login .form form .message_email,
+.content .login .form form .message_checkPw {
+  color: #b40303;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 155px;
+  opacity: 0;
 }
 .content .login .form form input {
   width: 323px;
-  height: 44px;
+  height: 38px;
   padding-left: 10px;
   font-size: 18px;
+  margin-left: 25px;
   border: 1px solid #101113;
   background-color: rgba(232, 173, 175, 0);
-  margin: 7px 0;
+  margin-bottom: 8px;
 }
 .content .login .form form input[name=code] {
   width: 137px;
-  margin-left: 38px;
   float: left;
 }
 .content .login .form form .checkbox {
-  z-index: 1;
   position: relative;
-  display: inline-block;
-  height: 19px;
-  background: url(../images/shop_cart_bgchoose.png) no-repeat;
-  vertical-align: middle;
-  margin-left: 12px;
-  margin-bottom: 10px;
+}
+.content .login .form form .checkbox span {
+  font-size: 12px;
 }
 .content .login .form form .checkbox .shop_cart_choose {
   background: url(../images/shop_cart_choose.png) no-repeat;
   width: 25px;
   height: 16px;
   position: absolute;
-  left: -2px;
+  margin-left: 20px;
   margin-top: 3px;
 }
-.content .login .form form input[type=checkbox] {
+.content .login .form form .checkbox .checkboxInput {
+  z-index: 1;
+  margin-left: 25px;
+  height: 19px;
+  display: inline-block;
+  background: url(../images/shop_cart_bgchoose.png) no-repeat;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+.content .login .form form .checkbox .checkboxInput input[type=checkbox] {
   width: 20px;
   height: 20px;
   border: 1px solid #2c2c2c;
   margin-top: 0;
   opacity: 0;
+  margin-left: 0;
 }
 .content .login .form form input[type=submit] {
   width: 151px;
@@ -220,21 +229,16 @@ header .header-top .logo p {
   font-size: 24px;
   padding-left: 0;
   text-align: center;
+  height: 40px;
   border: none;
+  line-height: 20px;
   cursor: pointer;
 }
-.content .login .form form .code .codeimg {
-  position: relative;
-  line-height: 40px;
-  left: -80px;
-  background-color: #ccc;
-  width: 104px;
-  height: 40px;
-  float: right;
-  margin-top: 9px;
-}
 .content .login .form form .code #idcode {
-  padding-top: 20px;
+  float: right;
+  position: relative;
+  padding-top: 10px;
+  left: -45px;
   moz-user-select: -moz-none;
   -moz-user-select: none;
   -o-user-select: none;
@@ -245,7 +249,7 @@ header .header-top .logo p {
 .content .login .form form .code .ehong-idcode-val {
   position: relative;
   padding: 1px 4px 1px 4px;
-  top: 0px;
+  top: 0;
   *top: -3px;
   letter-spacing: 4px;
   display: inline;

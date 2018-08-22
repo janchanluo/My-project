@@ -116,6 +116,7 @@ a {
   border-collapse: separate;
   border-spacing: 0 15px;
   text-align: center;
+  width: 1200px;
 }
 .content .goodsmessage table tr th {
   border-bottom: 1px solid #6e6d6d;
@@ -136,11 +137,20 @@ a {
   border-bottom: 1px #6e6d6d solid;
   border-top: 1px #6e6d6d solid;
 }
+.content .goodsmessage table tr td em {
+  font-style: normal;
+}
+.content .goodsmessage table tr td .goodsPrice-em {
+  color: #ff0000;
+}
 .content .goodsmessage table tr td:first-child {
   border-left: 1px solid #6e6d6d;
 }
 .content .goodsmessage table tr td:last-child {
   border-right: 1px solid #6e6d6d;
+}
+.content .goodsmessage table tr .del {
+  cursor: pointer;
 }
 .content .goodsmessage table .way {
   padding-top: 5px;
@@ -150,19 +160,21 @@ a {
   padding-bottom: 35px;
 }
 .content .goodsmessage table .way .title input {
+  cursor: pointer;
   margin-left: 48px;
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 20px;
   height: 20px;
   border: 2px solid #101113;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
-.content .goodsmessage table .way .title input[type=checkbox]:checked {
+.content .goodsmessage table .way .title input[type=radio]:checked {
   background: url("../images/checkbox_icon.png") no-repeat center;
 }
-.content .goodsmessage table .way span {
+.content .goodsmessage table .way label {
   padding: 0 5px;
+  cursor: pointer;
 }
 .content .goodsmessage table .way .second-title {
   float: left;
@@ -171,6 +183,7 @@ a {
   display: none;
 }
 .content .goodsmessage table .way .selectstyle select {
+  cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
   background: url("../images/confirm_orderbottom.png") no-repeat scroll right center transparent;
@@ -185,6 +198,7 @@ a {
 .content .goodsmessage table .way textarea {
   width: 438px;
   height: 128px;
+  padding: 6px;
 }
 .content .goodsmessage table .submit {
   float: right;
@@ -211,4 +225,5 @@ a {
   background-color: #b40303;
   color: #fff;
   font-size: 26px;
+  cursor: pointer;
 }

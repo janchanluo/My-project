@@ -5,39 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>用户注册</title>
     <link rel="stylesheet" type="" href="../css/L-register.css">
     <link rel="stylesheet" type="" href="../css/L-footer.css">
 </head>
 
 <body>
-    <div id="fixdheader">
-        <div class="fixdheader-content">
-            <div class="left">
-                <p>尚为商城欢迎您，
-                    <a href="login.html">登录/注册</a>
-                </p>
+        <div id="fixdheader">
+                <div class="fixdheader-content">
+                    <div class="fixdheader_left">
+                        <p>尚为商城欢迎您，
+                            <a href="login.html">登录</a>/<a href="register.html">注册</a>
+                        </p>
+                    </div>
+                    <div class="fixdheader_right">
+                        <ul>
+                           
+                                <li><a href="user.html">用户中心 </a></li>
+                                <li> <a href="#">我的足迹 </a></li>
+                                <li><a href="#">联系客服</a></li>
+                                <li><a href="#">帮助中心</a></li>
+                   
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="right">
-                <ul>
-                    <li>用户中心</li>
-                    <li>我的足迹</li>
-                    <li>联系客服</li>
-                    <li>帮助中心</li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <header>
         <section class="header-top clearfix">
-            <div class="logo">
-               <a class="logoimg" href="index.html"> <img src="../images/logo.png" alt=""></a>
-                <p>如果可以，
-                    <br> 我们只想伴你走过一段温柔的时光，
-                    <br> 不疏不离，不舍不弃。
-                    <br> 小小酒杯载不动山高水长，殷殷里飘起缕缕牵肠的欲说还休。
-                </p>
-            </div>
+                <div class="logo">
+                        <a class="logoimg" href="index.html">
+                            <img src="../images/index_logo.png" alt="">
+                        </a>
+                        <p class="logo_txt">
+                            <br> 我们只想伴你走过一段温柔的时光，
+                            <br> 不疏不离，不舍不弃。
+                            <br> 小小酒杯载不动山高水长，殷殷里飘起缕缕牵肠的欲说还休。
+                        </p>
+                    </div>
         </section>
     </header>
     <div class="content" >
@@ -49,19 +53,22 @@
                    </ul>
                 </div>
                <div class="form">
-                   <form action="">
-                       <ul>
-                           <li><strong>用户名：</strong><input type="text" name="username" placeholder="请输入您的用户名"></li>
-                           <li><strong>密码：</strong><input type="text" name="password" placeholder="请输入两种或两种以上字符"></li>
-                           <li><strong>确认密码：</strong><input name="password" type="text" placeholder="请再次输入您的密码"></li>
-                           <li><strong>Email:</strong><input name="email" type="text" placeholder="请输入您的邮箱号"></li>
-                           <li><strong>手机号：</strong><input name="phonenumber" type="text" placeholder="请输入您的手机号"></li>
+                   <form action="login.html">
+                           <div class="userInput"><strong>用户名：</strong><input id="username" type="text" name="username" placeholder="请输入您的用户名"></div>
+                           <p class="message_user">请检查用户名输入是否有误</p>
+                           <div class="pwInput"><strong>密码：</strong><input id="pw" type="text" name="password" placeholder="请输入两种或两种以上字符"></div>
+                           <p class="message_pw">请确认密码输入是否有误</p>
+                           <div class="checkpwInput"><strong>确认密码：</strong><input id="checkPw" name="password" type="text" placeholder="请再次输入您的密码"></div>
+                           <p class="message_checkPw">请确认两次密码输入是否一致</p>
+                           <div class="emailInput"><strong>Email:</strong><input id="email" name="email" type="text" placeholder="请输入您的邮箱号"></div>
+                           <p class="message_email">请检查邮箱输入是否有误</p>
+                           <div class="phoneInput"><strong>手机号：</strong><input id="phone" name="phonenumber" type="text" placeholder="请输入您的手机号"></div>
+                           <p class="message_phone">请检查手机号输入是否有误</p>
                            <div class="code clearfix">
-                           <li><strong>验证码：</strong><input name="code" type="text" placeholder="请输入验证码"></li>
+                           <div class="codeInput"><strong>验证码：</strong><input name="code" type="text" placeholder="请输入验证码"></div>
                            <div id="idcode"></div>
                         </div>
-                           <li><div class="checkbox"><span id="choose"></span><input type="checkbox" name="checkbox" id=""><span>阅读并同意《尚为商城用户注册协议》《隐私政策》</span></div></li>
-                        </ul>
+                      <div class="checkbox"><strong></strong><span id="choose"></span><div class="checkboxInput"><input type="checkbox" name="checkbox" id=""></div><span> 阅读并同意《尚为商城用户注册协议》《隐私政策》</span></div>
                  <input type="submit" name="submit" value="立即注册">
                    </form>
                </div>
@@ -72,18 +79,15 @@
             <div class="first-footer  clearfix">
                 <ul>
                     <li>
-                       <a href="#">
-                            <p>100%品牌保证</p>  
-                        </a>
+                         <span></span>100%品牌保证
                     </li>
-                    <li> <a href="#">
-                            <p>7天无理由退换</p>  
-                        </a></li>
-                    <li> <a href="#">
-                            <p>售后服务保障</p>  
-                        </a></li>
+                    <li>
+                         <span></span>7天无理由退换
+                    </li>
+                    <li>
+                        <span></span>售后服务保障
+                    </li>
                 </ul>
-    
             </div>
             <div class="second-footer clearfix">
                     <dl>
@@ -135,20 +139,5 @@
 </body>
 <script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
 <script src="../js/jquery.idcode.js"></script>
-<script>
-    $.idcode.setCode();
-    
-    $("#btns").click(function (){
-        var IsBy = $.idcode.validateCode(); 
-        alert(IsBy);
-        console.log(IsBy);
-    });
-    $(".checkbox input").click(function () {
-        if($(this).attr("checked")){
-            $("#choose").prop("class","shop_cart_choose");
-        }else{
-            $("#choose").prop("class","");
-        }
-      })
-</script>
+<script src="../js/register.js"></script>
 </html>
