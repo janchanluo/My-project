@@ -7,6 +7,9 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 /* //消除边距 */
+img {
+  border: 0;
+}
 header,
 footer,
 nav,
@@ -74,18 +77,16 @@ a {
   padding-top: 20px;
   position: relative;
 }
-#content .top .topimg {
-  background: url(../images/top.png) no-repeat;
+#content .top h3 {
   width: 100%;
   height: 60px;
-}
-#content .top .topimg h3 {
   color: #fff;
   line-height: 60px;
   padding-left: 30px;
   font-size: 20px;
   font-weight: bold;
   font-family: "微软雅黑";
+  background: url(../images/top.png) no-repeat;
 }
 #content .new {
   margin-top: 20px;
@@ -99,10 +100,13 @@ a {
   border: 2px solid #a80202;
 }
 #content .new .new_left li:first-child {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 #content .new .new_left li:nth-child(2) {
   float: right;
+}
+#content .new .new_left li:nth-child(4) {
+  margin-left: 10px;
 }
 #content .more {
   margin-top: -2px;
@@ -157,6 +161,7 @@ a {
 }
 #content .hot ul li:nth-child(2) {
   margin-left: 2px;
+  margin-bottom: 30px;
 }
 #content .hot ul li:nth-child(3) {
   margin-left: 2px;
@@ -205,21 +210,34 @@ a {
 #content .selected {
   margin-top: 20px;
 }
-#content .selected li {
+#content .selected ul {
+  margin-top: 30px;
+}
+#content .selected ul li {
   font-size: 0;
   float: left;
 }
-#content .selected li img {
+#content .selected ul li img {
   border: 2px solid #fff;
 }
-#content .selected li img:hover {
+#content .selected ul li img:hover {
   border: 2px solid #a80202;
 }
-#content .selected li ul {
-  margin-top: 10px;
+#content .selected ul li:nth-child(1) {
+  margin-bottom: 30px;
 }
-#content .selected li:nth-child(2) {
+#content .selected ul li:nth-child(2) {
   float: right;
+  margin-bottom: 30px;
+}
+#content .selected ul li:nth-child(4) {
+  margin-left: 35px;
+}
+#content .selected ul li:nth-child(5) {
+  margin-left: 30px;
+}
+#content .selected ul li:nth-child(6) {
+  margin-left: 27px;
 }
 #content .explosion {
   margin-top: 20px;

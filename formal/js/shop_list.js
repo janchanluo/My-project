@@ -26,7 +26,7 @@ $(".classifycontent").each(function (i,el) {
 $(".restart").click(function () {
     for(var i=0;i<$(".classifycontent").find("a").length;i++){
         $(".classifycontent").find("a").eq(i).removeClass("current");    
-        $(".mychoose").html('   <p>我的筛选：<a href="javascript:;" >未选择</a>><a href="javascript:;">未选择</a>><a href="javascript:;">未选择</a>><a href="javascript:;"> 未选择</a>><a href="javascript:;">未选择</a>><a href="javascript:;">未选择</a></p><div class="restart"><a href="javascript:;"><span></span>未选择</a>  </div>') 
+        $(".mychoose").html('   <p>我的筛选：<a href="javascript:;" >未选择</a>><a href="javascript:;">未选择</a>><a href="javascript:;">未选择</a>><a href="javascript:;"> 未选择</a>><a href="javascript:;">未选择</a>><a href="javascript:;">未选择</a></p><div class="restart"><a href="javascript:;"><span></span>重置</a>  </div>') 
     }
   })
 

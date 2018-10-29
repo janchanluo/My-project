@@ -7,6 +7,9 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 /* //消除边距 */
+img {
+  border: 0;
+}
 header,
 footer,
 nav,
@@ -88,7 +91,6 @@ a {
 }
 .content .classify {
   border: 1px #000 solid;
-  min-height: 380px;
 }
 .content .classify .classify-title {
   background-color: #343434;
@@ -134,7 +136,8 @@ a {
 }
 .content .classify .classifycontent {
   width: 940px;
-  padding-top: 5px;
+  padding: 10px 0 20px 0;
+  overflow: hidden;
   text-align: center;
   margin: 0 auto;
 }
@@ -145,6 +148,7 @@ a {
 .content .classify .classifycontent dl dt {
   font-size: 20px;
   font-weight: 400;
+  padding: 1px 0;
 }
 .content .classify .classifycontent dl dd {
   padding: 1px 40px;

@@ -7,6 +7,9 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 /* //消除边距 */
+img {
+  border: 0;
+}
 header,
 footer,
 nav,
@@ -194,8 +197,9 @@ header .header-top .logo .logo_txt {
 .content .login .form form .checkbox {
   position: relative;
 }
-.content .login .form form .checkbox span {
+.content .login .form form .checkbox label {
   font-size: 12px;
+  cursor: pointer;
 }
 .content .login .form form .checkbox .shop_cart_choose {
   background: url(../images/shop_cart_choose.png) no-repeat;

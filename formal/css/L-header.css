@@ -7,6 +7,9 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 /* //消除边距 */
+img {
+  border: 0;
+}
 header,
 footer,
 nav,
@@ -67,7 +70,7 @@ a {
   background-color: #101113;
   font-size: 16px;
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
 }
 #fixdheader .fixdheader-content {
   width: 1200px;
